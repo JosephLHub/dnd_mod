@@ -1,6 +1,11 @@
 {
   "item.dndmod.miniature_cloak": "Miniature Cloak",
   "item.dndmod.tiny_bell": "Tiny Bell",
+  "item.dndmod.silver_ingot": "Silver Ingot",
+  "item.dndmod.silver_nugget": "Silver Nugget",
+
+  "block.dndmod.silver_ore": "Silver Ore",
+  "block.dndmod.silver_block": "Block of Silver",
 
   "creativetab.dnd_tab": "DnD Classes"
 }

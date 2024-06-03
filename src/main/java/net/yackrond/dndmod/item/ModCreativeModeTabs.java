@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.yackrond.dndmod.DnDMod;
+import net.yackrond.dndmod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DnDMod.MOD_ID);
@@ -18,6 +19,11 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.MINIATURE_CLOAK.get());
                         pOutput.accept(ModItems.TINY_BELL.get());
+                        pOutput.accept(ModItems.SILVER_INGOT.get());
+                        pOutput.accept(ModItems.SILVER_NUGGET.get());
+
+                        pOutput.accept(ModBlocks.SILVER_ORE.get());
+                        pOutput.accept(ModBlocks.SILVER_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
