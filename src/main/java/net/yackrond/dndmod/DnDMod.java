@@ -57,6 +57,10 @@ public class DnDMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SILVER_INGOT);
             event.accept(ModItems.SILVER_NUGGET);
+            event.accept(ModItems.RAW_SILVER);
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.PLATINUM_NUGGET);
+            event.accept(ModItems.RAW_PLATINUM);
         }
 
     }

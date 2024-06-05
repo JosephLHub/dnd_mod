@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.1,
+  "group": "platinum_ingot",
+  "ingredient": {
+    "item": "dndmod:end_platinum_ore"
+  },
+  "result": {
+    "item": "dndmod:platinum_ingot",
+    "count": 3
+  }
+}

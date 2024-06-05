@@ -3,9 +3,22 @@
   "item.dndmod.tiny_bell": "Tiny Bell",
   "item.dndmod.silver_ingot": "Silver Ingot",
   "item.dndmod.silver_nugget": "Silver Nugget",
+  "item.dndmod.raw_silver": "Raw Silver",
+  "item.dndmod.platinum_ingot": "Platinum Ingot",
+  "item.dndmod.platinum_nugget": "Platinum Nugget",
+  "item.dndmod.raw_platinum": "Raw Platinum",
 
   "block.dndmod.silver_ore": "Silver Ore",
   "block.dndmod.silver_block": "Block of Silver",
+  "block.dndmod.raw_silver_block": "Block of Raw Silver",
+  "block.dndmod.deepslate_silver_ore": "Deepslate Silver Ore",
+
+  "block.dndmod.platinum_ore": "Platinum Ore",
+  "block.dndmod.platinum_block": "Block of Platinum",
+  "block.dndmod.raw_platinum_block": "Block of Raw Platinum",
+  "block.dndmod.deepslate_platinum_ore": "Deepslate Platinum Ore",
+  "block.dndmod.nether_platinum_ore": "Nether Platinum Ore",
+  "block.dndmod.end_platinum_ore": "End Platinum Ore",
 
   "creativetab.dnd_tab": "DnD Classes"
 }

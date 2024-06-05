@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catgeory": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key" : {
+    "#": {
+      "item": "dndmod:raw_silver"
+    }
+  },
+  "result": {
+    "item": "dndmod:raw_silver_block"
+  }
+}
