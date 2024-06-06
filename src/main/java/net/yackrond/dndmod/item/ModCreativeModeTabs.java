@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SILVER_INGOT.get());
                         pOutput.accept(ModItems.SILVER_NUGGET.get());
                         pOutput.accept(ModItems.RAW_SILVER.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                         pOutput.accept(ModBlocks.SILVER_ORE.get());
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());
@@ -34,6 +35,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_PLATINUM_ORE.get());
                         pOutput.accept(ModBlocks.END_PLATINUM_ORE.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

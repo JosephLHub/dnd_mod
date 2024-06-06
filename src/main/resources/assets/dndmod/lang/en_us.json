@@ -8,6 +8,8 @@
   "item.dndmod.platinum_nugget": "Platinum Nugget",
   "item.dndmod.raw_platinum": "Raw Platinum",
 
+  "item.dndmod.metal_detector": "Metal Detector",
+
   "block.dndmod.silver_ore": "Silver Ore",
   "block.dndmod.silver_block": "Block of Silver",
   "block.dndmod.raw_silver_block": "Block of Raw Silver",
@@ -19,6 +21,8 @@
   "block.dndmod.deepslate_platinum_ore": "Deepslate Platinum Ore",
   "block.dndmod.nether_platinum_ore": "Nether Platinum Ore",
   "block.dndmod.end_platinum_ore": "End Platinum Ore",
+
+  "block.dndmod.sound_block": "Sound Block",
 
   "creativetab.dnd_tab": "DnD Classes"
 }
