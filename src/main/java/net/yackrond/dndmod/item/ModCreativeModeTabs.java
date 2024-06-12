@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SILVER_NUGGET.get());
                         pOutput.accept(ModItems.RAW_SILVER.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.ROTTEN_EGG.get());
+                        pOutput.accept(ModItems.OIL_BOTTLE.get());
 
                         pOutput.accept(ModBlocks.SILVER_ORE.get());
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());

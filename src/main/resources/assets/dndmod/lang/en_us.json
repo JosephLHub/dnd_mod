@@ -7,6 +7,8 @@
   "item.dndmod.platinum_ingot": "Platinum Ingot",
   "item.dndmod.platinum_nugget": "Platinum Nugget",
   "item.dndmod.raw_platinum": "Raw Platinum",
+  "item.dndmod.rotten_egg": "Rotten Egg",
+  "item.dndmod.oil_bottle": "Oil Bottle",
 
   "item.dndmod.metal_detector": "Metal Detector",
 
@@ -23,6 +25,8 @@
   "block.dndmod.end_platinum_ore": "End Platinum Ore",
 
   "block.dndmod.sound_block": "Sound Block",
+
+  "tooltip.dndmod.metal_detector.tooltip": "Finds valuables underground",
 
   "creativetab.dnd_tab": "DnD Classes"
 }

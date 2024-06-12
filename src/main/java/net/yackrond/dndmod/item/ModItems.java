@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.yackrond.dndmod.DnDMod;
+import net.yackrond.dndmod.item.custom.FuelItem;
 import net.yackrond.dndmod.item.custom.MetalDetectorItem;
 
 public class ModItems {
@@ -19,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_PLATINUM = ITEMS.register("raw_platinum", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector", () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> ROTTEN_EGG = ITEMS.register("rotten_egg", () -> new Item(new Item.Properties().food(ModFoods.ROTTEN_EGG)));
+    public static final RegistryObject<Item> OIL_BOTTLE = ITEMS.register("oil_bottle", () -> new FuelItem(new Item.Properties(), 3200));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
