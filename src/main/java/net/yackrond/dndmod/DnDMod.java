@@ -54,15 +54,30 @@ public class DnDMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.YEW_PLANKS);
+            event.accept(ModBlocks.YEW_STAIRS);
+            event.accept(ModBlocks.YEW_SLAB);
+            event.accept(ModBlocks.YEW_FENCE);
+            event.accept(ModBlocks.YEW_FENCE_GATE);
+            event.accept(ModBlocks.YEW_DOOR);
+            event.accept(ModBlocks.YEW_TRAPDOOR);
+            event.accept(ModBlocks.YEW_PRESSURE_PLATE);
+            event.accept(ModBlocks.YEW_BUTTON);
+
+        }
+        else if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SILVER_INGOT);
             event.accept(ModItems.SILVER_NUGGET);
             event.accept(ModItems.RAW_SILVER);
             event.accept(ModItems.PLATINUM_INGOT);
             event.accept(ModItems.PLATINUM_NUGGET);
             event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.POWDERED_DIAMOND);
+            event.accept(ModItems.POWDERED_IRON);
+            event.accept(ModItems.POWDERED_GOLD);
+            event.accept(ModItems.POWDERED_SILVER);
         }
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

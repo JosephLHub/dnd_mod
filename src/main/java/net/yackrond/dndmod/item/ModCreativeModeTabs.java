@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_PLATINUM_ORE.get());
                         pOutput.accept(ModBlocks.END_PLATINUM_ORE.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.SILVER_WALL.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

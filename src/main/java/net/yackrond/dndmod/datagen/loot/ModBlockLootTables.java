@@ -28,6 +28,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_SILVER_BLOCK.get());
         this.dropSelf(ModBlocks.PLATINUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
+        this.dropSelf(ModBlocks.YEW_PLANKS.get());
+        this.dropSelf(ModBlocks.YEW_STAIRS.get());
+        this.dropSelf(ModBlocks.YEW_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.YEW_FENCE.get());
+        this.dropSelf(ModBlocks.YEW_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.YEW_BUTTON.get());
+        this.dropSelf(ModBlocks.YEW_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.SILVER_WALL.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
         this.add(ModBlocks.SILVER_ORE.get(), block -> createModdedOreDrops(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get(), 2.0F, 5.0F));
@@ -36,6 +44,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 1.0F, 3.0F));
         this.add(ModBlocks.NETHER_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 2.0F, 4.0F));
         this.add(ModBlocks.END_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 3.0F, 5.0F));
+
+        this.add(ModBlocks.YEW_SLAB.get(), block -> createSlabItemTable(ModBlocks.YEW_SLAB.get()));
+        this.add(ModBlocks.YEW_DOOR.get(), block -> createDoorTable(ModBlocks.YEW_DOOR.get()));
     }
 
     protected LootTable.Builder createModdedOreDrops(Block pBlock, Item item, float pMin, float pMax) {

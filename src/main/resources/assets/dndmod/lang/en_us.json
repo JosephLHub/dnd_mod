@@ -10,6 +10,11 @@
   "item.dndmod.rotten_egg": "Rotten Egg",
   "item.dndmod.oil_bottle": "Oil Bottle",
 
+  "item.dndmod.powdered_diamond": "Powdered Diamond",
+  "item.dndmod.powdered_gold": "Powdered Gold",
+  "item.dndmod.powdered_iron": "Powdered Iron",
+  "item.dndmod.powdered_silver": "Powdered Silver",
+
   "item.dndmod.metal_detector": "Metal Detector",
 
   "block.dndmod.silver_ore": "Silver Ore",
@@ -23,6 +28,17 @@
   "block.dndmod.deepslate_platinum_ore": "Deepslate Platinum Ore",
   "block.dndmod.nether_platinum_ore": "Nether Platinum Ore",
   "block.dndmod.end_platinum_ore": "End Platinum Ore",
+
+  "block.dndmod.yew_planks": "Yew Planks",
+  "block.dndmod.yew_stairs": "Yew Stairs",
+  "block.dndmod.yew_slab": "Yew Slab",
+  "block.dndmod.yew_button": "Yew Button",
+  "block.dndmod.yew_pressure_plate": "Yew Pressure Plate",
+  "block.dndmod.yew_fence": "Yew Fence",
+  "block.dndmod.yew_fence_gate": "Yew Fence Gate",
+  "block.dndmod.yew_door": "Yew Door",
+  "block.dndmod.yew_trapdoor": "Yew Trapdoor",
+  "block.dndmod.silver_wall": "Silver Wall",
 
   "block.dndmod.sound_block": "Sound Block",
 

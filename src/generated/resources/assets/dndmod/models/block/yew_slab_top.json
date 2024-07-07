@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "dndmod:block/yew_planks",
+    "side": "dndmod:block/yew_planks",
+    "top": "dndmod:block/yew_planks"
+  }
+}
