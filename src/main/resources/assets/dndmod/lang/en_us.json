@@ -7,6 +7,9 @@
   "item.dndmod.platinum_ingot": "Platinum Ingot",
   "item.dndmod.platinum_nugget": "Platinum Nugget",
   "item.dndmod.raw_platinum": "Raw Platinum",
+  "item.dndmod.adamant_ingot": "Adamant Ingot",
+  "item.dndmod.adamant_nugget": "Adamant Nugget",
+  "item.dndmod.raw_adamant": "Raw Adamant",
   "item.dndmod.rotten_egg": "Rotten Egg",
   "item.dndmod.oil_bottle": "Oil Bottle",
 
@@ -14,6 +17,8 @@
   "item.dndmod.powdered_gold": "Powdered Gold",
   "item.dndmod.powdered_iron": "Powdered Iron",
   "item.dndmod.powdered_silver": "Powdered Silver",
+  "item.dndmod.powdered_platinum": "Powdered Platinum",
+  "item.dndmod.powdered_adamant": "Powdered Adamant",
 
   "item.dndmod.metal_detector": "Metal Detector",
 
@@ -28,6 +33,13 @@
   "block.dndmod.deepslate_platinum_ore": "Deepslate Platinum Ore",
   "block.dndmod.nether_platinum_ore": "Nether Platinum Ore",
   "block.dndmod.end_platinum_ore": "End Platinum Ore",
+
+  "block.dndmod.adamant_ore": "Adamant Ore",
+  "block.dndmod.adamant_block": "Block of Adamant",
+  "block.dndmod.raw_adamant_block": "Block of Raw Adamant",
+  "block.dndmod.deepslate_adamant_ore": "Deepslate Adamant Ore",
+  "block.dndmod.nether_adamant_ore": "Nether Adamant Ore",
+  "block.dndmod.end_adamant_ore": "End Adamant Ore",
 
   "block.dndmod.yew_planks": "Yew Planks",
   "block.dndmod.yew_stairs": "Yew Stairs",

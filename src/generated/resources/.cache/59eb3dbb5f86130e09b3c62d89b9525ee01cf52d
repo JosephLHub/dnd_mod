@@ -1,10 +1,16 @@
-// 1.20.1	2024-07-06T23:05:41.4212195	Loot Tables
+// 1.20.1	2024-07-07T21:54:53.0860291	Loot Tables
+58fde54f505b87b89d75faa3faaaa2d1e4f961ce data/dndmod/loot_tables/blocks/adamant_block.json
+b9b7dd6d83093cec06e84d03479d1768014c0c37 data/dndmod/loot_tables/blocks/adamant_ore.json
+b778bc3414ef079f98e50f8d0fbe696411a22f13 data/dndmod/loot_tables/blocks/deepslate_adamant_ore.json
 7dc2de79043d3ff37e15e1db6fe80a5b851b16de data/dndmod/loot_tables/blocks/deepslate_platinum_ore.json
 ed20a0d1b70f331c003e92950d6d484d2671202e data/dndmod/loot_tables/blocks/deepslate_silver_ore.json
+0d486e068d51ac11ab56c77e4f0f585e841d9b07 data/dndmod/loot_tables/blocks/end_adamant_ore.json
 f32fd7fe85a9f2cc7a5f13e98fbf3ba79a7f60ac data/dndmod/loot_tables/blocks/end_platinum_ore.json
+87548c0b53e656f965875cf89eb88f4c22c117e9 data/dndmod/loot_tables/blocks/nether_adamant_ore.json
 946756570e578c80ed852e6d914a70eadbbfb7cd data/dndmod/loot_tables/blocks/nether_platinum_ore.json
 2b555dcd142d5ced295cf5bb65fc64f02cb6ac8c data/dndmod/loot_tables/blocks/platinum_block.json
 71eafd231cb9d171bd1cf594f19632ad2d3dd22a data/dndmod/loot_tables/blocks/platinum_ore.json
+f976cac6c7e9d94540dbdf3143f0dfeb0df6d795 data/dndmod/loot_tables/blocks/raw_adamant_block.json
 e6d67bfc92d24804f64882a25118a70e8a0d25e4 data/dndmod/loot_tables/blocks/raw_platinum_block.json
 861212aaaba832e936a00101331a3d90213a3443 data/dndmod/loot_tables/blocks/raw_silver_block.json
 387264553b005e47d780652792a74e0b0d04de71 data/dndmod/loot_tables/blocks/silver_block.json

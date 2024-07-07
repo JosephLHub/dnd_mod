@@ -73,10 +73,15 @@ public class DnDMod
             event.accept(ModItems.PLATINUM_INGOT);
             event.accept(ModItems.PLATINUM_NUGGET);
             event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.ADAMANT_INGOT);
+            event.accept(ModItems.ADAMANT_NUGGET);
+            event.accept(ModItems.RAW_ADAMANT);
             event.accept(ModItems.POWDERED_DIAMOND);
             event.accept(ModItems.POWDERED_IRON);
             event.accept(ModItems.POWDERED_GOLD);
             event.accept(ModItems.POWDERED_SILVER);
+            event.accept(ModItems.POWDERED_PLATINUM);
+            event.accept(ModItems.POWDERED_ADAMANT);
         }
     }
 

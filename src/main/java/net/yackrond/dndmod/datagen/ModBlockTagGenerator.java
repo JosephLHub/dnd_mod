@@ -32,7 +32,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.NETHER_PLATINUM_ORE.get(),
                     ModBlocks.END_PLATINUM_ORE.get(),
                     ModBlocks.PLATINUM_BLOCK.get(),
-                    ModBlocks.RAW_PLATINUM_BLOCK.get());
+                    ModBlocks.RAW_PLATINUM_BLOCK.get(),
+                    ModBlocks.ADAMANT_ORE.get(),
+                    ModBlocks.DEEPSLATE_ADAMANT_ORE.get(),
+                    ModBlocks.NETHER_ADAMANT_ORE.get(),
+                    ModBlocks.END_ADAMANT_ORE.get(),
+                    ModBlocks.ADAMANT_BLOCK.get(),
+                    ModBlocks.RAW_ADAMANT_BLOCK.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SILVER_ORE.get(),
                     ModBlocks.DEEPSLATE_SILVER_ORE.get(),
@@ -44,10 +50,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.NETHER_PLATINUM_ORE.get(),
                     ModBlocks.END_PLATINUM_ORE.get(),
                     ModBlocks.PLATINUM_BLOCK.get(),
-                    ModBlocks.YEW_PLANKS.get(),
-                    ModBlocks.RAW_PLATINUM_BLOCK.get());
+                    ModBlocks.RAW_PLATINUM_BLOCK.get(),
+                    ModBlocks.ADAMANT_ORE.get(),
+                    ModBlocks.DEEPSLATE_ADAMANT_ORE.get(),
+                    ModBlocks.NETHER_ADAMANT_ORE.get(),
+                    ModBlocks.END_ADAMANT_ORE.get(),
+                    ModBlocks.ADAMANT_BLOCK.get(),
+                    ModBlocks.RAW_ADAMANT_BLOCK.get(),
+                    ModBlocks.YEW_PLANKS.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.SOUND_BLOCK.get());
+
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.YEW_FENCE.get());
         this.tag(BlockTags.FENCE_GATES)

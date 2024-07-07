@@ -1,13 +1,18 @@
-// 1.20.1	2024-07-07T13:32:23.6751378	Item Models: dndmod
+// 1.20.1	2024-07-07T21:54:53.0870299	Item Models: dndmod
+52e9372c6eb8c47794f27d13800801a17d24ba19 assets/dndmod/models/item/adamant_ingot.json
+0d0e664a59e44a1ae4556dc0cd563ed6cb1bf28c assets/dndmod/models/item/adamant_nugget.json
 e3659cb044e7c52c7135eef0443ff824275cfcdc assets/dndmod/models/item/metal_detector.json
 6605fa236465f5ab203aae1b6dac21c0aa7fb660 assets/dndmod/models/item/miniature_cloak.json
 5f4d1a303bf6de6a4f68466b310d7ab5639edbb5 assets/dndmod/models/item/oil_bottle.json
 b0dafeaa83fd96add71aac70c0f449673ef692b6 assets/dndmod/models/item/platinum_ingot.json
 440e0a6a717c702fa1d77462e1e90d477d1e76ba assets/dndmod/models/item/platinum_nugget.json
+e1aa9550205ad9bf3746b975c28c769f4175640f assets/dndmod/models/item/powdered_adamant.json
 e70fd024a23a225f76636090578b90a00ac1a8d2 assets/dndmod/models/item/powdered_diamond.json
 2faed25595541abbf444d42d370e1c0327fa6810 assets/dndmod/models/item/powdered_gold.json
 df04831af0ecfb3e608c9c3154e364ff611ac8d1 assets/dndmod/models/item/powdered_iron.json
+410f6f39ccf05dd0ab96815ff71d617b837134cc assets/dndmod/models/item/powdered_platinum.json
 8449ddbaaf4f82168ec06601fad7b82c155565e5 assets/dndmod/models/item/powdered_silver.json
+804205304eeca3f0b232cca61ed05b0d063b9860 assets/dndmod/models/item/raw_adamant.json
 59dbbd2dd4228dbe9f098fa9989aeff1be920e79 assets/dndmod/models/item/raw_platinum.json
 4ea876a3015be13fcdcda1263342645c5a6c06a1 assets/dndmod/models/item/raw_silver.json
 6ffcaebf543b40aab8a9711c8d33e85eb161c804 assets/dndmod/models/item/rotten_egg.json

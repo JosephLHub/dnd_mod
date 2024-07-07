@@ -23,6 +23,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NETHER_PLATINUM_ORE);
         blockWithItem(ModBlocks.END_PLATINUM_ORE);
 
+        blockWithItem(ModBlocks.ADAMANT_BLOCK);
+        blockWithItem(ModBlocks.RAW_ADAMANT_BLOCK);
+        blockWithItem(ModBlocks.ADAMANT_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ADAMANT_ORE);
+        blockWithItem(ModBlocks.NETHER_ADAMANT_ORE);
+        blockWithItem(ModBlocks.END_ADAMANT_ORE);
+
         blockWithItem(ModBlocks.SILVER_BLOCK);
         blockWithItem(ModBlocks.RAW_SILVER_BLOCK);
         blockWithItem(ModBlocks.SILVER_ORE);

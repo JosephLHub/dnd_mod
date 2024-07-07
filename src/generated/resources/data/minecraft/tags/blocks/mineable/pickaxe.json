@@ -9,6 +9,12 @@
     "dndmod:nether_platinum_ore",
     "dndmod:end_platinum_ore",
     "dndmod:platinum_block",
-    "dndmod:raw_platinum_block"
+    "dndmod:raw_platinum_block",
+    "dndmod:adamant_ore",
+    "dndmod:deepslate_adamant_ore",
+    "dndmod:nether_adamant_ore",
+    "dndmod:end_adamant_ore",
+    "dndmod:adamant_block",
+    "dndmod:raw_adamant_block"
   ]
 }

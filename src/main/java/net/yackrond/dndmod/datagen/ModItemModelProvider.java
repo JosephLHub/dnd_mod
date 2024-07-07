@@ -31,6 +31,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PLATINUM_NUGGET);
         simpleItem(ModItems.RAW_PLATINUM);
 
+        simpleItem(ModItems.ADAMANT_INGOT);
+        simpleItem(ModItems.ADAMANT_NUGGET);
+        simpleItem(ModItems.RAW_ADAMANT);
+
         simpleItem(ModItems.SILVER_INGOT);
         simpleItem(ModItems.SILVER_NUGGET);
         simpleItem(ModItems.RAW_SILVER);
@@ -39,6 +43,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.POWDERED_IRON);
         simpleItem(ModItems.POWDERED_GOLD);
         simpleItem(ModItems.POWDERED_SILVER);
+        simpleItem(ModItems.POWDERED_PLATINUM);
+        simpleItem(ModItems.POWDERED_ADAMANT);
 
         simpleBlockItem(ModBlocks.YEW_DOOR);
         fenceItem(ModBlocks.YEW_FENCE, ModBlocks.YEW_PLANKS);

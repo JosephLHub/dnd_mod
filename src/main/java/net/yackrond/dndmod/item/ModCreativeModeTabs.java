@@ -37,6 +37,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_PLATINUM_ORE.get());
                         pOutput.accept(ModBlocks.END_PLATINUM_ORE.get());
+
+                        pOutput.accept(ModBlocks.ADAMANT_ORE.get());
+                        pOutput.accept(ModBlocks.ADAMANT_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_ADAMANT_BLOCK.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_ADAMANT_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_ADAMANT_ORE.get());
+                        pOutput.accept(ModBlocks.END_ADAMANT_ORE.get());
+
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.SILVER_WALL.get());
                     })

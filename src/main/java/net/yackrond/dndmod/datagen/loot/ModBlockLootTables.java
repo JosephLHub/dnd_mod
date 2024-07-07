@@ -28,6 +28,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_SILVER_BLOCK.get());
         this.dropSelf(ModBlocks.PLATINUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
+        this.dropSelf(ModBlocks.ADAMANT_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_ADAMANT_BLOCK.get());
         this.dropSelf(ModBlocks.YEW_PLANKS.get());
         this.dropSelf(ModBlocks.YEW_STAIRS.get());
         this.dropSelf(ModBlocks.YEW_PRESSURE_PLATE.get());
@@ -44,6 +46,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 1.0F, 3.0F));
         this.add(ModBlocks.NETHER_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 2.0F, 4.0F));
         this.add(ModBlocks.END_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 3.0F, 5.0F));
+        this.add(ModBlocks.ADAMANT_ORE.get(), block -> createModdedOreDrops(ModBlocks.ADAMANT_ORE.get(), ModItems.RAW_ADAMANT.get(), 1.0F, 3.0F));
+        this.add(ModBlocks.DEEPSLATE_ADAMANT_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_ADAMANT_ORE.get(), ModItems.RAW_ADAMANT.get(), 1.0F, 3.0F));
+        this.add(ModBlocks.NETHER_ADAMANT_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_ADAMANT_ORE.get(), ModItems.RAW_ADAMANT.get(), 2.0F, 4.0F));
+        this.add(ModBlocks.END_ADAMANT_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_ADAMANT_ORE.get(), ModItems.RAW_ADAMANT.get(), 3.0F, 5.0F));
 
         this.add(ModBlocks.YEW_SLAB.get(), block -> createSlabItemTable(ModBlocks.YEW_SLAB.get()));
         this.add(ModBlocks.YEW_DOOR.get(), block -> createDoorTable(ModBlocks.YEW_DOOR.get()));

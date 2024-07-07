@@ -20,6 +20,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.SILVER_ORE.get(), ModBlocks.DEEPSLATE_SILVER_ORE.get());
     private static final List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM.get(),
             ModBlocks.PLATINUM_ORE.get(), ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), ModBlocks.NETHER_PLATINUM_ORE.get(), ModBlocks.END_PLATINUM_ORE.get());
+    private static final List<ItemLike> ADAMANT_SMELTABLES = List.of(ModItems.RAW_ADAMANT.get(),
+            ModBlocks.ADAMANT_ORE.get(), ModBlocks.DEEPSLATE_ADAMANT_ORE.get(), ModBlocks.NETHER_ADAMANT_ORE.get(), ModBlocks.END_ADAMANT_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -30,8 +32,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 0.5F, 200, "silver");
         oreBlasting(pWriter, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 0.5F, 100, "silver");
 
-        oreSmelting(pWriter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 0.8F, 200, "platinum");
-        oreBlasting(pWriter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 0.8F, 100, "platinum");
+        oreSmelting(pWriter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.8F, 200, "platinum");
+        oreBlasting(pWriter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.8F, 100, "platinum");
+
+        oreSmelting(pWriter, ADAMANT_SMELTABLES, RecipeCategory.MISC, ModItems.ADAMANT_INGOT.get(), 0.8F, 200, "adamant");
+        oreBlasting(pWriter, ADAMANT_SMELTABLES, RecipeCategory.MISC, ModItems.ADAMANT_INGOT.get(), 0.8F, 100, "adamant");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get())
                 .pattern("###")
@@ -43,6 +48,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
                 .requires(ModBlocks.SILVER_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SILVER_BLOCK.get()), has(ModBlocks.SILVER_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLATINUM_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PLATINUM_INGOT.get()), has(ModItems.PLATINUM_INGOT.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 9)
+                .requires(ModBlocks.PLATINUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PLATINUM_BLOCK.get()), has(ModBlocks.PLATINUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ADAMANT_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.ADAMANT_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ADAMANT_INGOT.get()), has(ModItems.ADAMANT_INGOT.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ADAMANT_INGOT.get(), 9)
+                .requires(ModBlocks.ADAMANT_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.ADAMANT_BLOCK.get()), has(ModBlocks.ADAMANT_BLOCK.get()))
                 .save(pWriter);
     }
 
