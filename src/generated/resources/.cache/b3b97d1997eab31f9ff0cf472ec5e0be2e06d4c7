@@ -1,9 +1,9 @@
-// 1.20.1	2024-07-07T21:54:53.0840288	Tags for minecraft:block mod id dndmod
+// 1.20.1	2024-09-12T23:17:35.6437803	Tags for minecraft:block mod id dndmod
 5c6d433451becac7b8f587ec49267cd35734915e data/dndmod/tags/blocks/metal_detector_valuables.json
 05842f738e6dfaef2225e272915e1cb18d213962 data/forge/tags/blocks/needs_netherite_tool.json
 6af6a78efad8ce6251a303672efba7198773ba26 data/minecraft/tags/blocks/fences.json
 495b3c219c4a9d51e5ffad8939e261b2b2b43de2 data/minecraft/tags/blocks/fence_gates.json
-cd632a547e738117bc54af9972ce8732061fc561 data/minecraft/tags/blocks/mineable/pickaxe.json
+d62e3cdfaa43188bd752572e98ddf2b45feaeab7 data/minecraft/tags/blocks/mineable/pickaxe.json
 dfc7854de30f61717250943bc8c6789546dd61f7 data/minecraft/tags/blocks/needs_diamond_tool.json
-e0b0cba928470311ce3954d6488915fa8888df92 data/minecraft/tags/blocks/needs_iron_tool.json
+8c0e5ae01d1fc6925d32f6b4d22fa675deeae398 data/minecraft/tags/blocks/needs_iron_tool.json
 285444414972f9ef0af790f47dc7e0d29fc1e9ed data/minecraft/tags/blocks/walls.json

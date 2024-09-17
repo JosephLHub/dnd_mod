@@ -11,6 +11,7 @@ import net.yackrond.dndmod.DnDMod;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
+        public static final TagKey<Block> NEEDS_MODDED_TOOL = tag("needs_modded_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(DnDMod.MOD_ID, name));

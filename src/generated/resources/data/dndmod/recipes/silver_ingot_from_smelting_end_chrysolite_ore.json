@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "chrysolite",
+  "ingredient": {
+    "item": "dndmod:end_chrysolite_ore"
+  },
+  "result": "dndmod:silver_ingot"
+}

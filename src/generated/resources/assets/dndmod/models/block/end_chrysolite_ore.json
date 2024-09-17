@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dndmod:block/end_chrysolite_ore"
+  }
+}

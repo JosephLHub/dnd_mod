@@ -39,12 +39,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SILVER_NUGGET);
         simpleItem(ModItems.RAW_SILVER);
 
+        simpleItem(ModItems.RUBY);
+        simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.CHRYSOLITE);
+
         simpleItem(ModItems.POWDERED_DIAMOND);
+        simpleItem(ModItems.POWDERED_EMERALD);
         simpleItem(ModItems.POWDERED_IRON);
         simpleItem(ModItems.POWDERED_GOLD);
         simpleItem(ModItems.POWDERED_SILVER);
         simpleItem(ModItems.POWDERED_PLATINUM);
         simpleItem(ModItems.POWDERED_ADAMANT);
+        simpleItem(ModItems.POWDERED_RUBY);
+        simpleItem(ModItems.POWDERED_SAPPHIRE);
+        simpleItem(ModItems.POWDERED_CHRYSOLITE);
 
         simpleBlockItem(ModBlocks.YEW_DOOR);
         fenceItem(ModBlocks.YEW_FENCE, ModBlocks.YEW_PLANKS);

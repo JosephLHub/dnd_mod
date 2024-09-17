@@ -10,15 +10,23 @@
   "item.dndmod.adamant_ingot": "Adamant Ingot",
   "item.dndmod.adamant_nugget": "Adamant Nugget",
   "item.dndmod.raw_adamant": "Raw Adamant",
+  "item.dndmod.ruby": "Ruby",
+  "item.dndmod.sapphire": "Sapphire",
+  "item.dndmod.chrysolite": "Chrysolite",
+
   "item.dndmod.rotten_egg": "Rotten Egg",
   "item.dndmod.oil_bottle": "Oil Bottle",
 
   "item.dndmod.powdered_diamond": "Powdered Diamond",
+  "item.dndmod.powdered_emerald": "Powdered Emerald",
   "item.dndmod.powdered_gold": "Powdered Gold",
   "item.dndmod.powdered_iron": "Powdered Iron",
   "item.dndmod.powdered_silver": "Powdered Silver",
   "item.dndmod.powdered_platinum": "Powdered Platinum",
   "item.dndmod.powdered_adamant": "Powdered Adamant",
+  "item.dndmod.powdered_ruby": "Powdered Ruby",
+  "item.dndmod.powdered_sapphire": "Powdered Sapphire",
+  "item.dndmod.powdered_chrysolite": "Powdered Chrysolite",
 
   "item.dndmod.metal_detector": "Metal Detector",
 
@@ -26,6 +34,8 @@
   "block.dndmod.silver_block": "Block of Silver",
   "block.dndmod.raw_silver_block": "Block of Raw Silver",
   "block.dndmod.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.dndmod.nether_silver_ore": "Nether Silver Ore",
+  "block.dndmod.end_silver_ore": "End Silver Ore",
 
   "block.dndmod.platinum_ore": "Platinum Ore",
   "block.dndmod.platinum_block": "Block of Platinum",
@@ -41,6 +51,24 @@
   "block.dndmod.nether_adamant_ore": "Nether Adamant Ore",
   "block.dndmod.end_adamant_ore": "End Adamant Ore",
 
+  "block.dndmod.ruby_ore": "Ruby Ore",
+  "block.dndmod.ruby_block": "Block of Ruby",
+  "block.dndmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.dndmod.nether_ruby_ore": "Nether Ruby Ore",
+  "block.dndmod.end_ruby_ore": "End Ruby Ore",
+
+  "block.dndmod.sapphire_ore": "Sapphire Ore",
+  "block.dndmod.sapphire_block": "Block of Sapphire",
+  "block.dndmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.dndmod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.dndmod.end_sapphire_ore": "End Sapphire Ore",
+
+  "block.dndmod.chrysolite_ore": "Chrysolite Ore",
+  "block.dndmod.chrysolite_block": "Block of Chrysolite",
+  "block.dndmod.deepslate_chrysolite_ore": "Deepslate Chrysolite Ore",
+  "block.dndmod.nether_chrysolite_ore": "Nether Chrysolite Ore",
+  "block.dndmod.end_chrysolite_ore": "End Chrysolite Ore",
+
   "block.dndmod.yew_planks": "Yew Planks",
   "block.dndmod.yew_stairs": "Yew Stairs",
   "block.dndmod.yew_slab": "Yew Slab",
@@ -55,6 +83,8 @@
   "block.dndmod.sound_block": "Sound Block",
 
   "tooltip.dndmod.metal_detector.tooltip": "Finds valuables underground",
+  "tooltip.dndmod.resistance.tooltip": "Used to cast Resistance, a 1st Level Abjuration Spell",
 
-  "creativetab.dnd_tab": "DnD Classes"
+  "creativetab.dnd_tab": "DnD Classes",
+  "creativetab.spell_components_tab": "Spell Components"
 }

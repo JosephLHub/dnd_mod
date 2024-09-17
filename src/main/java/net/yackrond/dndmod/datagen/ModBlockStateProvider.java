@@ -16,24 +16,46 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.PLATINUM_BLOCK);
-        blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
-        blockWithItem(ModBlocks.PLATINUM_ORE);
-        blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE);
-        blockWithItem(ModBlocks.NETHER_PLATINUM_ORE);
-        blockWithItem(ModBlocks.END_PLATINUM_ORE);
-
-        blockWithItem(ModBlocks.ADAMANT_BLOCK);
-        blockWithItem(ModBlocks.RAW_ADAMANT_BLOCK);
-        blockWithItem(ModBlocks.ADAMANT_ORE);
-        blockWithItem(ModBlocks.DEEPSLATE_ADAMANT_ORE);
-        blockWithItem(ModBlocks.NETHER_ADAMANT_ORE);
-        blockWithItem(ModBlocks.END_ADAMANT_ORE);
-
         blockWithItem(ModBlocks.SILVER_BLOCK);
+        blockWithItem(ModBlocks.PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.ADAMANT_BLOCK);
+        blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.CHRYSOLITE_BLOCK);
+
         blockWithItem(ModBlocks.RAW_SILVER_BLOCK);
+        blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_ADAMANT_BLOCK);
+
         blockWithItem(ModBlocks.SILVER_ORE);
+        blockWithItem(ModBlocks.PLATINUM_ORE);
+        blockWithItem(ModBlocks.ADAMANT_ORE);
+        blockWithItem(ModBlocks.RUBY_ORE);
+        blockWithItem(ModBlocks.SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.CHRYSOLITE_ORE);
+
         blockWithItem(ModBlocks.DEEPSLATE_SILVER_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ADAMANT_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_CHRYSOLITE_ORE);
+
+        blockWithItem(ModBlocks.NETHER_SILVER_ORE);
+        blockWithItem(ModBlocks.NETHER_PLATINUM_ORE);
+        blockWithItem(ModBlocks.NETHER_ADAMANT_ORE);
+        blockWithItem(ModBlocks.NETHER_RUBY_ORE);
+        blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.NETHER_CHRYSOLITE_ORE);
+
+        blockWithItem(ModBlocks.END_SILVER_ORE);
+        blockWithItem(ModBlocks.END_PLATINUM_ORE);
+        blockWithItem(ModBlocks.END_ADAMANT_ORE);
+        blockWithItem(ModBlocks.END_RUBY_ORE);
+        blockWithItem(ModBlocks.END_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.END_CHRYSOLITE_ORE);
+
+
 
         blockWithItem(ModBlocks.YEW_PLANKS);
         stairsBlock(((StairBlock) ModBlocks.YEW_STAIRS.get()), blockTexture(ModBlocks.YEW_PLANKS.get()));
