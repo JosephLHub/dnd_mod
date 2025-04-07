@@ -60,8 +60,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_CHRYSOLITE_ORE.get());
                         pOutput.accept(ModBlocks.END_CHRYSOLITE_ORE.get());
 
+                        pOutput.accept(ModBlocks.SUNSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.SUNSTONE_BLOCK.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_SUNSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.END_SUNSTONE_ORE.get());
+
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.SILVER_WALL.get());
+                        pOutput.accept(ModBlocks.MACERATOR.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> SPELL_COMPONENTS_TAB = CREATIVE_MODE_TABS.register("spell_components_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MINIATURE_CLOAK.get()))

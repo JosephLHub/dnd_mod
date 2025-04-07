@@ -1,0 +1,12 @@
+{
+  "type": "dndmod:macerating",
+  "ingredients": [
+    {
+      "item": "dndmod:ruby"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "dndmod:powdered_ruby"
+  }
+}

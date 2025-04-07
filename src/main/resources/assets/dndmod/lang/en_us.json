@@ -13,6 +13,7 @@
   "item.dndmod.ruby": "Ruby",
   "item.dndmod.sapphire": "Sapphire",
   "item.dndmod.chrysolite": "Chrysolite",
+  "item.dndmod.sunstone": "Sunstone",
 
   "item.dndmod.rotten_egg": "Rotten Egg",
   "item.dndmod.oil_bottle": "Oil Bottle",
@@ -27,6 +28,7 @@
   "item.dndmod.powdered_ruby": "Powdered Ruby",
   "item.dndmod.powdered_sapphire": "Powdered Sapphire",
   "item.dndmod.powdered_chrysolite": "Powdered Chrysolite",
+  "item.dndmod.powdered_sunstone": "Powdered Sunstone",
 
   "item.dndmod.metal_detector": "Metal Detector",
 
@@ -69,6 +71,18 @@
   "block.dndmod.nether_chrysolite_ore": "Nether Chrysolite Ore",
   "block.dndmod.end_chrysolite_ore": "End Chrysolite Ore",
 
+  "block.dndmod.sunstone_ore": "Sunstone Ore",
+  "block.dndmod.sunstone_block": "Block of Sunstone",
+  "block.dndmod.deepslate_sunstone_ore": "Deepslate Sunstone Ore",
+  "block.dndmod.nether_sunstone_ore": "Nether Sunstone Ore",
+  "block.dndmod.end_sunstone_ore": "End Sunstone Ore",
+
+  "block.dndmod.yew_log": "Yew Log",
+  "block.dndmod.yew_wood": "Yew Wood",
+  "block.dndmod.stripped_yew_log": "Stripped Yew Log",
+  "block.dndmod.stripped_yew_wood": "Stripped Yew Wood",
+  "block.dndmod.yew_leaves": "Yew Leaves",
+
   "block.dndmod.yew_planks": "Yew Planks",
   "block.dndmod.yew_stairs": "Yew Stairs",
   "block.dndmod.yew_slab": "Yew Slab",
@@ -82,8 +96,13 @@
 
   "block.dndmod.sound_block": "Sound Block",
 
+  "block.dndmod.macerator": "Macerator",
+
   "tooltip.dndmod.metal_detector.tooltip": "Finds valuables underground",
   "tooltip.dndmod.resistance.tooltip": "Used to cast Resistance, a 1st Level Abjuration Spell",
+
+  "key.category.dndmod.dnd": "Dnd Mod",
+  "key.dndmod.cast_spell": "Cast Spell",
 
   "creativetab.dnd_tab": "DnD Classes",
   "creativetab.spell_components_tab": "Spell Components"

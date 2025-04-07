@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-12T23:34:52.9667147	Item Models: dndmod
+// 1.20.1	2025-04-04T01:06:23.680908	Item Models: dndmod
 52e9372c6eb8c47794f27d13800801a17d24ba19 assets/dndmod/models/item/adamant_ingot.json
 0d0e664a59e44a1ae4556dc0cd563ed6cb1bf28c assets/dndmod/models/item/adamant_nugget.json
 927bfa86f298b41e7f82bc54ce4e076dbc216101 assets/dndmod/models/item/chrysolite.json
@@ -17,6 +17,7 @@ df04831af0ecfb3e608c9c3154e364ff611ac8d1 assets/dndmod/models/item/powdered_iron
 d04f396e383a6bdc1ecc8673cebc8dfa2fa27f35 assets/dndmod/models/item/powdered_ruby.json
 b9be16f54545f3f06c360acbaa026b0306c6db94 assets/dndmod/models/item/powdered_sapphire.json
 8449ddbaaf4f82168ec06601fad7b82c155565e5 assets/dndmod/models/item/powdered_silver.json
+f6a7d1e6d54d9f8f71c2ba07bd2180863dc3d711 assets/dndmod/models/item/powdered_sunstone.json
 804205304eeca3f0b232cca61ed05b0d063b9860 assets/dndmod/models/item/raw_adamant.json
 59dbbd2dd4228dbe9f098fa9989aeff1be920e79 assets/dndmod/models/item/raw_platinum.json
 4ea876a3015be13fcdcda1263342645c5a6c06a1 assets/dndmod/models/item/raw_silver.json
@@ -26,6 +27,7 @@ b9be16f54545f3f06c360acbaa026b0306c6db94 assets/dndmod/models/item/powdered_sapp
 bc41cdfec4cb1bf14980758dec521694fae392ce assets/dndmod/models/item/silver_ingot.json
 55eabb299c45f33b1dc706df9ca33a64b2407243 assets/dndmod/models/item/silver_nugget.json
 ffe63c325eb3850f8046f4d318ed0b9b02e82205 assets/dndmod/models/item/silver_wall.json
+d7d2aabfde48c244d956b4bdd7a03b66af8f12a3 assets/dndmod/models/item/sunstone.json
 d2e3047ce24070887b104fcc38a8af8022135a1f assets/dndmod/models/item/tiny_bell.json
 5880f1b37180e10ed8b8e76f34d053cbca3317d8 assets/dndmod/models/item/yew_button.json
 d7bc6e546184de0c592cec44d34899fee4e53fb9 assets/dndmod/models/item/yew_door.json

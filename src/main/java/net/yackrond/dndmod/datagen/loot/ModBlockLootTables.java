@@ -30,10 +30,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
         this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
         this.dropSelf(ModBlocks.CHRYSOLITE_BLOCK.get());
+        this.dropSelf(ModBlocks.SUNSTONE_BLOCK.get());
 
         this.dropSelf(ModBlocks.RAW_SILVER_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_ADAMANT_BLOCK.get());
+
+        this.dropSelf(ModBlocks.YEW_LOG.get());
+        this.dropSelf(ModBlocks.YEW_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_YEW_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_YEW_WOOD.get());
 
         this.dropSelf(ModBlocks.YEW_PLANKS.get());
         this.dropSelf(ModBlocks.YEW_STAIRS.get());
@@ -45,12 +51,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SILVER_WALL.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+        this.dropSelf(ModBlocks.MACERATOR.get());
+
         this.add(ModBlocks.SILVER_ORE.get(), block -> createModdedOreDrops(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get(), 2.0F, 5.0F));
         this.add(ModBlocks.PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 1.0F, 3.0F));
         this.add(ModBlocks.ADAMANT_ORE.get(), block -> createModdedOreDrops(ModBlocks.ADAMANT_ORE.get(), ModItems.RAW_ADAMANT.get(), 1.0F, 3.0F));
         this.add(ModBlocks.RUBY_ORE.get(), block -> createModdedOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get(), 2.0F, 5.0F));
         this.add(ModBlocks.SAPPHIRE_ORE.get(), block -> createModdedOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(), 2.0F, 5.0F));
         this.add(ModBlocks.CHRYSOLITE_ORE.get(), block -> createModdedOreDrops(ModBlocks.CHRYSOLITE_ORE.get(), ModItems.CHRYSOLITE.get(), 2.0F, 5.0F));
+        this.add(ModBlocks.SUNSTONE_ORE.get(), block -> createModdedOreDrops(ModBlocks.SUNSTONE_ORE.get(), ModItems.SUNSTONE.get(), 2.0F, 5.0F));
 
         this.add(ModBlocks.DEEPSLATE_SILVER_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER.get(), 2.0F, 5.0F));
         this.add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 1.0F, 3.0F));
@@ -58,6 +67,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RUBY.get(), 2.0F, 5.0F));
         this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(), 2.0F, 5.0F));
         this.add(ModBlocks.DEEPSLATE_CHRYSOLITE_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_CHRYSOLITE_ORE.get(), ModItems.CHRYSOLITE.get(), 2.0F, 5.0F));
+        this.add(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get(), block -> createModdedOreDrops(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get(), ModItems.SUNSTONE.get(), 2.0F, 5.0F));
 
         this.add(ModBlocks.NETHER_SILVER_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_SILVER_ORE.get(), ModItems.RAW_SILVER.get(), 3.0F, 6.0F));
         this.add(ModBlocks.NETHER_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 2.0F, 4.0F));
@@ -65,6 +75,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NETHER_RUBY_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_RUBY_ORE.get(), ModItems.RUBY.get(), 3.0F, 6.0F));
         this.add(ModBlocks.NETHER_SAPPHIRE_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(), 3.0F, 6.0F));
         this.add(ModBlocks.NETHER_CHRYSOLITE_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_CHRYSOLITE_ORE.get(), ModItems.CHRYSOLITE.get(), 3.0F, 6.0F));
+        this.add(ModBlocks.NETHER_SUNSTONE_ORE.get(), block -> createModdedOreDrops(ModBlocks.NETHER_SUNSTONE_ORE.get(), ModItems.SUNSTONE.get(), 3.0F, 6.0F));
 
         this.add(ModBlocks.END_SILVER_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_SILVER_ORE.get(), ModItems.RAW_SILVER.get(), 4.0F, 7.0F));
         this.add(ModBlocks.END_PLATINUM_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 3.0F, 5.0F));
@@ -72,9 +83,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.END_RUBY_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_RUBY_ORE.get(), ModItems.RUBY.get(), 4.0F, 7.0F));
         this.add(ModBlocks.END_SAPPHIRE_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(), 4.0F, 7.0F));
         this.add(ModBlocks.END_CHRYSOLITE_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_CHRYSOLITE_ORE.get(), ModItems.CHRYSOLITE.get(), 4.0F, 7.0F));
+        this.add(ModBlocks.END_SUNSTONE_ORE.get(), block -> createModdedOreDrops(ModBlocks.END_SUNSTONE_ORE.get(), ModItems.SUNSTONE.get(), 4.0F, 7.0F));
 
         this.add(ModBlocks.YEW_SLAB.get(), block -> createSlabItemTable(ModBlocks.YEW_SLAB.get()));
         this.add(ModBlocks.YEW_DOOR.get(), block -> createDoorTable(ModBlocks.YEW_DOOR.get()));
+        this.add(ModBlocks.YEW_LEAVES.get(), block -> createLeavesDrops(block, ModBlocks.ADAMANT_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: change to sapling
     }
 
     protected LootTable.Builder createModdedOreDrops(Block pBlock, Item item, float pMin, float pMax) {

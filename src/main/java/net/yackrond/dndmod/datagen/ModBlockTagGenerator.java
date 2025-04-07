@@ -27,18 +27,23 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.RUBY_ORE.get(),
                         ModBlocks.SAPPHIRE_ORE.get(),
                         ModBlocks.CHRYSOLITE_ORE.get(),
+                        ModBlocks.SUNSTONE_ORE.get(),
                         ModBlocks.DEEPSLATE_RUBY_ORE.get(),
                         ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                         ModBlocks.DEEPSLATE_CHRYSOLITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_SUNSTONE_ORE.get(),
                         ModBlocks.NETHER_RUBY_ORE.get(),
                         ModBlocks.NETHER_SAPPHIRE_ORE.get(),
                         ModBlocks.NETHER_CHRYSOLITE_ORE.get(),
+                        ModBlocks.NETHER_SUNSTONE_ORE.get(),
                         ModBlocks.END_RUBY_ORE.get(),
                         ModBlocks.END_SAPPHIRE_ORE.get(),
                         ModBlocks.END_CHRYSOLITE_ORE.get(),
+                        ModBlocks.END_SUNSTONE_ORE.get(),
                         ModBlocks.RUBY_BLOCK.get(),
                         ModBlocks.SAPPHIRE_BLOCK.get(),
                         ModBlocks.CHRYSOLITE_BLOCK.get(),
+                    ModBlocks.SUNSTONE_BLOCK.get(),
                     ModBlocks.NETHER_SILVER_ORE.get(),
                     ModBlocks.END_SILVER_ORE.get(),
                     ModBlocks.DEEPSLATE_SILVER_ORE.get(),
@@ -61,18 +66,23 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.RUBY_ORE.get(),
                     ModBlocks.SAPPHIRE_ORE.get(),
                     ModBlocks.CHRYSOLITE_ORE.get(),
+                    ModBlocks.SUNSTONE_ORE.get(),
                     ModBlocks.DEEPSLATE_RUBY_ORE.get(),
                     ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                     ModBlocks.DEEPSLATE_CHRYSOLITE_ORE.get(),
+                    ModBlocks.DEEPSLATE_SUNSTONE_ORE.get(),
                     ModBlocks.NETHER_RUBY_ORE.get(),
                     ModBlocks.NETHER_SAPPHIRE_ORE.get(),
                     ModBlocks.NETHER_CHRYSOLITE_ORE.get(),
+                    ModBlocks.NETHER_SUNSTONE_ORE.get(),
                     ModBlocks.END_RUBY_ORE.get(),
                     ModBlocks.END_SAPPHIRE_ORE.get(),
                     ModBlocks.END_CHRYSOLITE_ORE.get(),
+                    ModBlocks.END_SUNSTONE_ORE.get(),
                     ModBlocks.RUBY_BLOCK.get(),
                     ModBlocks.SAPPHIRE_BLOCK.get(),
                     ModBlocks.CHRYSOLITE_BLOCK.get(),
+                    ModBlocks.SUNSTONE_BLOCK.get(),
                     ModBlocks.DEEPSLATE_SILVER_ORE.get(),
                     ModBlocks.NETHER_SILVER_ORE.get(),
                     ModBlocks.END_SILVER_ORE.get(),
@@ -101,5 +111,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YEW_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.SILVER_WALL.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.YEW_LOG.get())
+                .add(ModBlocks.YEW_WOOD.get())
+                .add(ModBlocks.STRIPPED_YEW_LOG.get())
+                .add(ModBlocks.STRIPPED_YEW_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.YEW_PLANKS.get());
     }
 }

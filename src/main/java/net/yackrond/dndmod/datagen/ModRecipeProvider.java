@@ -10,6 +10,7 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.yackrond.dndmod.DnDMod;
 import net.yackrond.dndmod.block.ModBlocks;
 import net.yackrond.dndmod.item.ModItems;
+import net.yackrond.dndmod.recipe.MaceratingRecipe;
 
 import java.util.Iterator;
 import java.util.List;

@@ -1,6 +1,7 @@
 package net.yackrond.dndmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,8 +16,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.yackrond.dndmod.block.ModBlocks;
+import net.yackrond.dndmod.block.entity.ModBlockEntities;
 import net.yackrond.dndmod.item.ModCreativeModeTabs;
 import net.yackrond.dndmod.item.ModItems;
+import net.yackrond.dndmod.networking.ModMessages;
+import net.yackrond.dndmod.recipe.ModRecipes;
+import net.yackrond.dndmod.screen.MaceratorScreen;
+import net.yackrond.dndmod.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -35,6 +41,11 @@ public class DnDMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -49,12 +60,20 @@ public class DnDMod
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModMessages.register();
+        });
 
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.YEW_LOG);
+            event.accept(ModBlocks.YEW_WOOD);
+            event.accept(ModBlocks.STRIPPED_YEW_LOG);
+            event.accept(ModBlocks.STRIPPED_YEW_WOOD);
+            event.accept(ModBlocks.YEW_LEAVES);
             event.accept(ModBlocks.YEW_PLANKS);
             event.accept(ModBlocks.YEW_STAIRS);
             event.accept(ModBlocks.YEW_SLAB);
@@ -79,6 +98,7 @@ public class DnDMod
             event.accept(ModItems.RUBY);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.CHRYSOLITE);
+            event.accept(ModItems.SUNSTONE);
             event.accept(ModItems.POWDERED_DIAMOND);
             event.accept(ModItems.POWDERED_EMERALD);
             event.accept(ModItems.POWDERED_IRON);
@@ -89,6 +109,7 @@ public class DnDMod
             event.accept(ModItems.POWDERED_RUBY);
             event.accept(ModItems.POWDERED_SAPPHIRE);
             event.accept(ModItems.POWDERED_CHRYSOLITE);
+            event.accept(ModItems.POWDERED_SUNSTONE);
         }
     }
 
@@ -103,6 +124,7 @@ public class DnDMod
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(ModMenuTypes.MACERATING_MENU.get(), MaceratorScreen::new);
         }
     }
 }

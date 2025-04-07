@@ -11,7 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.yackrond.dndmod.DnDMod;
-import net.yackrond.dndmod.block.custom.SoundBlock;
+import net.yackrond.dndmod.block.custom.*;
 import net.yackrond.dndmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -58,7 +58,23 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_CHRYSOLITE_ORE = registerBlock("end_chrysolite_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE)));
     public static final RegistryObject<Block> CHRYSOLITE_BLOCK = registerBlock("chrysolite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
 
-    public static final RegistryObject<Block> YEW_PLANKS = registerBlock("yew_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> SUNSTONE_ORE = registerBlock("sunstone_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_SUNSTONE_ORE = registerBlock("deepslate_sunstone_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
+    public static final RegistryObject<Block> NETHER_SUNSTONE_ORE = registerBlock("nether_sunstone_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE)));
+    public static final RegistryObject<Block> END_SUNSTONE_ORE = registerBlock("end_sunstone_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE)));
+    public static final RegistryObject<Block> SUNSTONE_BLOCK = registerBlock("sunstone_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block", () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK)));
+
+    public static final RegistryObject<Block> MACERATOR = registerBlock("macerator", () -> new MaceratorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> YEW_LOG = registerBlock("yew_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> YEW_WOOD = registerBlock("yew_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_YEW_LOG = registerBlock("stripped_yew_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_YEW_WOOD = registerBlock("stripped_yew_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> YEW_PLANKS = registerBlock("yew_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> YEW_LEAVES = registerBlock("yew_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
     public static final RegistryObject<Block> YEW_STAIRS = registerBlock("yew_stairs", () -> new StairBlock(() -> ModBlocks.YEW_PLANKS.get().defaultBlockState(),
             BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
     public static final RegistryObject<Block> YEW_SLAB = registerBlock("yew_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
@@ -69,9 +85,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVER_WALL = registerBlock("silver_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(ModBlocks.SILVER_BLOCK.get())));
     public static final RegistryObject<Block> YEW_DOOR = registerBlock("yew_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
     public static final RegistryObject<Block> YEW_TRAPDOOR = registerBlock("yew_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
-
-    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block", () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK)));
-
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,12 @@
+{
+  "type": "dndmod:macerating",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "dndmod:powdered_diamond"
+  }
+}

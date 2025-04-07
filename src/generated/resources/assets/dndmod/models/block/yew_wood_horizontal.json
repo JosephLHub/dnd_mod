@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "dndmod:block/yew_log",
+    "side": "dndmod:block/yew_log"
+  }
+}

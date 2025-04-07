@@ -39,6 +39,7 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHRYSOLITE = ITEMS.register("chrysolite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sunstone", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> POWDERED_DIAMOND = ITEMS.register("powdered_diamond", () -> new SpellComponentItem(new Item.Properties(),
                     List.of("§eGlyph of Warding", "§eNondetection", "§eStoneskin", "§eGreater Restoration", "§eSymbol", "§6Sequester"),
@@ -59,6 +60,7 @@ public class ModItems {
     public static final RegistryObject<Item> POWDERED_SAPPHIRE = ITEMS.register("powdered_sapphire", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POWDERED_CHRYSOLITE = ITEMS.register("powdered_chrysolite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POWDERED_EMERALD = ITEMS.register("powdered_emerald", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POWDERED_SUNSTONE = ITEMS.register("powdered_sunstone", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector", () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 

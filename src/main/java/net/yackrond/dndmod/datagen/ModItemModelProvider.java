@@ -42,6 +42,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RUBY);
         simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.CHRYSOLITE);
+        simpleItem(ModItems.SUNSTONE);
 
         simpleItem(ModItems.POWDERED_DIAMOND);
         simpleItem(ModItems.POWDERED_EMERALD);
@@ -53,6 +54,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.POWDERED_RUBY);
         simpleItem(ModItems.POWDERED_SAPPHIRE);
         simpleItem(ModItems.POWDERED_CHRYSOLITE);
+        simpleItem(ModItems.POWDERED_SUNSTONE);
 
         simpleBlockItem(ModBlocks.YEW_DOOR);
         fenceItem(ModBlocks.YEW_FENCE, ModBlocks.YEW_PLANKS);

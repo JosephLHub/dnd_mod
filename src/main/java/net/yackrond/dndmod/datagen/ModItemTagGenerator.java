@@ -3,9 +3,11 @@ package net.yackrond.dndmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.yackrond.dndmod.DnDMod;
+import net.yackrond.dndmod.block.ModBlocks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -17,6 +19,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.YEW_LOG.get().asItem())
+                .add(ModBlocks.YEW_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_YEW_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_YEW_WOOD.get().asItem());
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.YEW_PLANKS.get().asItem());
 
     }
 }
