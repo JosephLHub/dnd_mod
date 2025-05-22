@@ -23,9 +23,24 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
 
         simpleItem(ModItems.MINIATURE_CLOAK);
+        simpleItem(ModItems.MINIATURE_BELL);
+        simpleItem(ModItems.SILVER_WIRE);
+        simpleItem(ModItems.CURED_LEATHER);
+        simpleItem(ModItems.HOLY_WATER_BOTTLE);
+        simpleItem(ModItems.SILVER_MIRROR);
+        simpleItem(ModItems.HOLY_TEXT);
+        simpleItem(ModItems.ROPE);
+        simpleItem(ModItems.MISTLETOE_ASHES);
+        simpleItem(ModItems.PAIR_OF_PLATINUM_RINGS);
+        simpleItem(ModItems.INCENSE);
+        simpleItem(ModItems.BROKEN_PORTAL_KEY);
+        simpleItem(ModItems.PORTAL_KEY);
         simpleItem(ModItems.OIL_BOTTLE);
-        simpleItem(ModItems.TINY_BELL);
         simpleItem(ModItems.ROTTEN_EGG);
+
+        simpleItem(ModItems.SILVER_INGOT);
+        simpleItem(ModItems.SILVER_NUGGET);
+        simpleItem(ModItems.RAW_SILVER);
 
         simpleItem(ModItems.PLATINUM_INGOT);
         simpleItem(ModItems.PLATINUM_NUGGET);
@@ -35,14 +50,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ADAMANT_NUGGET);
         simpleItem(ModItems.RAW_ADAMANT);
 
-        simpleItem(ModItems.SILVER_INGOT);
-        simpleItem(ModItems.SILVER_NUGGET);
-        simpleItem(ModItems.RAW_SILVER);
+        simpleItem(ModItems.COPPER_NUGGET);
+        simpleItem(ModItems.POWDERED_COPPER);
 
         simpleItem(ModItems.RUBY);
         simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.CHRYSOLITE);
         simpleItem(ModItems.SUNSTONE);
+        simpleItem(ModItems.OPAL);
 
         simpleItem(ModItems.POWDERED_DIAMOND);
         simpleItem(ModItems.POWDERED_EMERALD);
@@ -68,6 +83,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         trapdoorItem(ModBlocks.YEW_TRAPDOOR);
 
+        simpleItem(ModItems.YEW_SIGN);
+        simpleItem(ModItems.YEW_HANGING_SIGN);
+        saplingItem(ModBlocks.YEW_SAPLING);
+
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(DnDMod.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

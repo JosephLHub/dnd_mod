@@ -48,6 +48,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.YEW_FENCE_GATE.get());
         this.dropSelf(ModBlocks.YEW_BUTTON.get());
         this.dropSelf(ModBlocks.YEW_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.YEW_SAPLING.get());
         this.dropSelf(ModBlocks.SILVER_WALL.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
@@ -87,7 +88,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.YEW_SLAB.get(), block -> createSlabItemTable(ModBlocks.YEW_SLAB.get()));
         this.add(ModBlocks.YEW_DOOR.get(), block -> createDoorTable(ModBlocks.YEW_DOOR.get()));
-        this.add(ModBlocks.YEW_LEAVES.get(), block -> createLeavesDrops(block, ModBlocks.ADAMANT_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: change to sapling
+        this.add(ModBlocks.YEW_LEAVES.get(), block -> createLeavesDrops(block, ModBlocks.YEW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.YEW_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_SIGN.get()));
+        this.add(ModBlocks.YEW_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_SIGN.get()));
+        this.add(ModBlocks.YEW_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_HANGING_SIGN.get()));
+        this.add(ModBlocks.YEW_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_HANGING_SIGN.get()));
     }
 
     protected LootTable.Builder createModdedOreDrops(Block pBlock, Item item, float pMin, float pMax) {

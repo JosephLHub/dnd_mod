@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-07T15:57:10.1182584	Loot Tables
+// 1.20.1	2025-05-18T21:51:56.334438	Loot Tables
 58fde54f505b87b89d75faa3faaaa2d1e4f961ce data/dndmod/loot_tables/blocks/adamant_block.json
 b9b7dd6d83093cec06e84d03479d1768014c0c37 data/dndmod/loot_tables/blocks/adamant_ore.json
 f74cd824c5ce7fa7400f3c9de046d600c1770fca data/dndmod/loot_tables/blocks/chrysolite_block.json
@@ -46,11 +46,16 @@ d87f7485880bdf80338809cac973fca0875ee9cb data/dndmod/loot_tables/blocks/sunstone
 a2613e006758d9c917bced814f55f2794bd66e19 data/dndmod/loot_tables/blocks/yew_door.json
 4e83d36369179a41b9de145066b821d78a3c6b40 data/dndmod/loot_tables/blocks/yew_fence.json
 00cbd7f8870b0e3de20c2992a5e75ebee734ed80 data/dndmod/loot_tables/blocks/yew_fence_gate.json
-c69faee1e4b1c146dbb000cfa44900dd9f2f0847 data/dndmod/loot_tables/blocks/yew_leaves.json
+cdb35ecfca72cd3850393e0667bbf7490a58cdb1 data/dndmod/loot_tables/blocks/yew_hanging_sign.json
+9b82d72d1a4687266af87861357c106fdf78ad69 data/dndmod/loot_tables/blocks/yew_leaves.json
 fb5ce6e337e07734690ee669dec1d8e3146435e0 data/dndmod/loot_tables/blocks/yew_log.json
 977380874b7a3f313f9962d424edd7cb8485c5c9 data/dndmod/loot_tables/blocks/yew_planks.json
 d2db127c1d0b9fc134e9be7b23ef275025a2535d data/dndmod/loot_tables/blocks/yew_pressure_plate.json
+ed1cba260d026efe393b304670f512421eed04b1 data/dndmod/loot_tables/blocks/yew_sapling.json
+613baab1d1d78c881fe6f925603d793dffdd36e9 data/dndmod/loot_tables/blocks/yew_sign.json
 8e9301b56a0396874cfc4183309c9cfdcb20e6b6 data/dndmod/loot_tables/blocks/yew_slab.json
 dc474cb1ca955a3baa4028005ded83f037bbbb8f data/dndmod/loot_tables/blocks/yew_stairs.json
 ef2f57e82405505d57fc98c5b930cb32e3066229 data/dndmod/loot_tables/blocks/yew_trapdoor.json
+f21631c12c0dffa4f68ea9b3e02b75cbb99ee8ec data/dndmod/loot_tables/blocks/yew_wall_hanging_sign.json
+0ad34a1b4c5afc6f06ba4795c85ec8d20e311e80 data/dndmod/loot_tables/blocks/yew_wall_sign.json
 bf3d1d060ccae8cd685dca746daef95081a4fa41 data/dndmod/loot_tables/blocks/yew_wood.json

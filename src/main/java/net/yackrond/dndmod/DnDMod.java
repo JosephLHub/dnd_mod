@@ -2,10 +2,19 @@ package net.yackrond.dndmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,7 +32,11 @@ import net.yackrond.dndmod.networking.ModMessages;
 import net.yackrond.dndmod.recipe.ModRecipes;
 import net.yackrond.dndmod.screen.MaceratorScreen;
 import net.yackrond.dndmod.screen.ModMenuTypes;
+import net.yackrond.dndmod.util.ModTags;
+import net.yackrond.dndmod.util.ModWoodTypes;
 import org.slf4j.Logger;
+
+import java.util.List;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DnDMod.MOD_ID)
@@ -85,7 +98,15 @@ public class DnDMod
             event.accept(ModBlocks.YEW_BUTTON);
 
         }
+        else if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.YEW_SAPLING);
+        }
+        else if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModItems.YEW_SIGN);
+            event.accept(ModItems.YEW_HANGING_SIGN);
+        }
         else if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.COPPER_NUGGET);
             event.accept(ModItems.SILVER_INGOT);
             event.accept(ModItems.SILVER_NUGGET);
             event.accept(ModItems.RAW_SILVER);
@@ -99,10 +120,12 @@ public class DnDMod
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.CHRYSOLITE);
             event.accept(ModItems.SUNSTONE);
+            event.accept(ModItems.OPAL);
             event.accept(ModItems.POWDERED_DIAMOND);
             event.accept(ModItems.POWDERED_EMERALD);
             event.accept(ModItems.POWDERED_IRON);
             event.accept(ModItems.POWDERED_GOLD);
+            event.accept(ModItems.POWDERED_COPPER);
             event.accept(ModItems.POWDERED_SILVER);
             event.accept(ModItems.POWDERED_PLATINUM);
             event.accept(ModItems.POWDERED_ADAMANT);
@@ -110,6 +133,12 @@ public class DnDMod
             event.accept(ModItems.POWDERED_SAPPHIRE);
             event.accept(ModItems.POWDERED_CHRYSOLITE);
             event.accept(ModItems.POWDERED_SUNSTONE);
+            event.accept(ModItems.CURED_LEATHER);
+            event.accept(ModItems.MISTLETOE_ASHES);
+        }
+        else if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.MINIATURE_BELL);
+            event.accept(ModItems.PORTAL_KEY);
         }
     }
 
@@ -124,6 +153,8 @@ public class DnDMod
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(ModWoodTypes.YEW);
+
             MenuScreens.register(ModMenuTypes.MACERATING_MENU.get(), MaceratorScreen::new);
         }
     }

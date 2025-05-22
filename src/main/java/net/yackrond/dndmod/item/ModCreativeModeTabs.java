@@ -74,7 +74,18 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MINIATURE_CLOAK.get()))
             .title(Component.translatable("creativetab.spell_components_tab")).displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.MINIATURE_CLOAK.get());
-                pOutput.accept(ModItems.TINY_BELL.get());
+                pOutput.accept(ModItems.MINIATURE_BELL.get());
+                pOutput.accept(ModItems.SILVER_WIRE.get());
+                pOutput.accept(ModItems.CURED_LEATHER.get());
+                pOutput.accept(ModItems.HOLY_WATER_BOTTLE.get());
+                pOutput.accept(ModItems.SILVER_MIRROR.get());
+                pOutput.accept(ModItems.HOLY_TEXT.get());
+                pOutput.accept(ModItems.ROPE.get());
+                pOutput.accept(ModItems.MISTLETOE_ASHES.get());
+                pOutput.accept(ModItems.PAIR_OF_PLATINUM_RINGS.get());
+                pOutput.accept(ModItems.INCENSE.get());
+                pOutput.accept(ModItems.BROKEN_PORTAL_KEY.get());
+                pOutput.accept(ModItems.OPAL.get());
                 pOutput.accept(ModItems.ROTTEN_EGG.get());
                 pOutput.accept(ModItems.OIL_BOTTLE.get());
 

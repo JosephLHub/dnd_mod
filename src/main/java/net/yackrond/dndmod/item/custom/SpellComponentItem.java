@@ -16,6 +16,16 @@ public class SpellComponentItem extends Item{
     private final List<Integer> levels;
     private List<String> schools;
 
+    //Spell School Colour Guide:
+    // Abjuration = Yellow (§e)
+    // Conjuration = Blue (§9)
+    // Divination = Aqua (§b)
+    // Enchantment = Light Purple (§d)
+    // Evocation = Dark Red (§4)
+    // Illusion = Dark Purple (§5)
+    // Necromancy = Dark Grey (§8)
+    // Transmutation = Dark Green (§2)
+
     public SpellComponentItem(Item.Properties pProperties, List<String> spellList, List<Integer> levels, List<String> schools) {
         super(pProperties);
         this.spellList = spellList;

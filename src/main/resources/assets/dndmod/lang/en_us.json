@@ -1,6 +1,20 @@
 {
   "item.dndmod.miniature_cloak": "Miniature Cloak",
-  "item.dndmod.tiny_bell": "Tiny Bell",
+  "item.dndmod.miniature_bell": "Miniature Bell",
+  "item.dndmod.silver_wire": "Silver Wire",
+  "item.dndmod.cured_leather": "Cured Leather",
+  "item.dndmod.holy_water_bottle": "Holy Water Bottle",
+  "item.dndmod.silver_mirror": "Silver Mirror",
+  "item.dndmod.holy_text": "Holy Text",
+  "item.dndmod.rope": "Rope",
+  "item.dndmod.mistletoe_ashes": "Mistletoe Ashes",
+  "item.dndmod.pair_of_platinum_rings": "Pair of Platinum Rings",
+  "item.dndmod.incense": "Incense",
+  "item.dndmod.broken_portal_key": "Broken Portal Key",
+  "item.dndmod.portal_key": "Portal Key",
+  "item.dndmod.rotten_egg": "Rotten Egg",
+  "item.dndmod.oil_bottle": "Oil Bottle",
+
   "item.dndmod.silver_ingot": "Silver Ingot",
   "item.dndmod.silver_nugget": "Silver Nugget",
   "item.dndmod.raw_silver": "Raw Silver",
@@ -10,18 +24,20 @@
   "item.dndmod.adamant_ingot": "Adamant Ingot",
   "item.dndmod.adamant_nugget": "Adamant Nugget",
   "item.dndmod.raw_adamant": "Raw Adamant",
+  "item.dndmod.copper_nugget": "Copper Nugget",
+  "item.dndmod.opal": "Opal",
   "item.dndmod.ruby": "Ruby",
   "item.dndmod.sapphire": "Sapphire",
   "item.dndmod.chrysolite": "Chrysolite",
   "item.dndmod.sunstone": "Sunstone",
 
-  "item.dndmod.rotten_egg": "Rotten Egg",
-  "item.dndmod.oil_bottle": "Oil Bottle",
+
 
   "item.dndmod.powdered_diamond": "Powdered Diamond",
   "item.dndmod.powdered_emerald": "Powdered Emerald",
   "item.dndmod.powdered_gold": "Powdered Gold",
   "item.dndmod.powdered_iron": "Powdered Iron",
+  "item.dndmod.powdered_copper": "Powdered Copper",
   "item.dndmod.powdered_silver": "Powdered Silver",
   "item.dndmod.powdered_platinum": "Powdered Platinum",
   "item.dndmod.powdered_adamant": "Powdered Adamant",
@@ -82,6 +98,7 @@
   "block.dndmod.stripped_yew_log": "Stripped Yew Log",
   "block.dndmod.stripped_yew_wood": "Stripped Yew Wood",
   "block.dndmod.yew_leaves": "Yew Leaves",
+  "block.dndmod.yew_sapling": "Yew Sapling",
 
   "block.dndmod.yew_planks": "Yew Planks",
   "block.dndmod.yew_stairs": "Yew Stairs",
@@ -92,6 +109,9 @@
   "block.dndmod.yew_fence_gate": "Yew Fence Gate",
   "block.dndmod.yew_door": "Yew Door",
   "block.dndmod.yew_trapdoor": "Yew Trapdoor",
+  "block.dndmod.yew_sign": "Yew Sign",
+  "block.dndmod.yew_hanging_sign": "Yew Hanging Sign",
+
   "block.dndmod.silver_wall": "Silver Wall",
 
   "block.dndmod.sound_block": "Sound Block",
@@ -101,7 +121,7 @@
   "tooltip.dndmod.metal_detector.tooltip": "Finds valuables underground",
   "tooltip.dndmod.resistance.tooltip": "Used to cast Resistance, a 1st Level Abjuration Spell",
 
-  "key.category.dndmod.dnd": "Dnd Mod",
+  "key.category.dndmod.dnd": "DnD Mod",
   "key.dndmod.cast_spell": "Cast Spell",
 
   "creativetab.dnd_tab": "DnD Classes",

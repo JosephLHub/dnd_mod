@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-07T15:59:26.8806787	Block States: dndmod
+// 1.20.1	2025-05-18T21:51:56.337441	Block States: dndmod
 c1c5139d0d10bfb56fad0be96c7ea6f2ef5d5a2d assets/dndmod/blockstates/adamant_block.json
 05abf3dfff198098f4ba9b632cbe4433d7c9bcd7 assets/dndmod/blockstates/adamant_ore.json
 83652767ce553d7f275c13d8545d56e4630e994a assets/dndmod/blockstates/chrysolite_block.json
@@ -46,13 +46,18 @@ e99d9ba237541916f4406a5be529a90e77addbcf assets/dndmod/blockstates/sunstone_bloc
 ceb4e2baf8218a390dd184b00caca2efc1c32743 assets/dndmod/blockstates/yew_door.json
 3b61fc55d4c49f64f8d7d2a6ef8100ecf02aa004 assets/dndmod/blockstates/yew_fence.json
 02e8f2426472651e3cf691e2dd78032c654f1eae assets/dndmod/blockstates/yew_fence_gate.json
+5ccf4484c587f154bb2706d0c67c13a85947a651 assets/dndmod/blockstates/yew_hanging_sign.json
 3cbb15e6de40a2d3d9bec1cc03fc90698d508f62 assets/dndmod/blockstates/yew_leaves.json
 58613675bbe967b57407609e074186ae15b88ba2 assets/dndmod/blockstates/yew_log.json
 e721261b9240b2bb948f183babdbe6a6d0e65895 assets/dndmod/blockstates/yew_planks.json
 6ad3ebeffacf4650d10fe6efa627d4bb9c17971f assets/dndmod/blockstates/yew_pressure_plate.json
+beb3dabad54a8a445153873ed99be4ad3a1fc739 assets/dndmod/blockstates/yew_sapling.json
+5b56965e9e2c1b093acea823f2cd19982bdafec6 assets/dndmod/blockstates/yew_sign.json
 bf6e0a2df39e4718e6ab5f8e9f12a794911276ad assets/dndmod/blockstates/yew_slab.json
 c508399f3fbe6016bb593689b0dc46f6cf3e8242 assets/dndmod/blockstates/yew_stairs.json
 71c65d2783412351115cf14a5e62bf93cda0374a assets/dndmod/blockstates/yew_trapdoor.json
+5ccf4484c587f154bb2706d0c67c13a85947a651 assets/dndmod/blockstates/yew_wall_hanging_sign.json
+5b56965e9e2c1b093acea823f2cd19982bdafec6 assets/dndmod/blockstates/yew_wall_sign.json
 a95e93ff58a4fe060bffb400945f7f59addc2bd0 assets/dndmod/blockstates/yew_wood.json
 c437684b96d61aa9921703f84b72fffb8c4b27fd assets/dndmod/models/block/adamant_block.json
 ae8589a9d7b607eec5745421b1fdd5ed4311de0d assets/dndmod/models/block/adamant_ore.json
@@ -116,12 +121,15 @@ e8c8bf194a74dbe51282c9bf4f5621a6d2b3ece9 assets/dndmod/models/block/yew_fence_ga
 0c92a6a5c5979fe0aa1e546b91af890285208466 assets/dndmod/models/block/yew_fence_gate_wall_open.json
 59d9184eb6001110c1c450e4b4378c211810bd3d assets/dndmod/models/block/yew_fence_post.json
 66cd28566d6fcd84c77e89a3002670d8f12332d2 assets/dndmod/models/block/yew_fence_side.json
+71859c094e59e0243722ca6d896f5cfc1bf67835 assets/dndmod/models/block/yew_hanging_sign.json
 27cabe2be4598c7e5055b6e24cf58e7e2ec20368 assets/dndmod/models/block/yew_leaves.json
 c57bd3168f6c1041b8cd1ae6bff0a71e513448a8 assets/dndmod/models/block/yew_log.json
 353a63c3061154509bff57d5b205069795b57815 assets/dndmod/models/block/yew_log_horizontal.json
 8b2de6def6700e7a1c33cb73d57439fdee6a8fb8 assets/dndmod/models/block/yew_planks.json
 f59a921f937ff40049214537f6e9f36afe7899b7 assets/dndmod/models/block/yew_pressure_plate.json
 7ffb831fabaab1d1c4edff583e9069e06b5fa692 assets/dndmod/models/block/yew_pressure_plate_down.json
+22d45c8b1c9cc70eab9c91d4985a535ae50891bd assets/dndmod/models/block/yew_sapling.json
+71859c094e59e0243722ca6d896f5cfc1bf67835 assets/dndmod/models/block/yew_sign.json
 cf93aa55194efa7d6f89d30a607af2797a8958df assets/dndmod/models/block/yew_slab.json
 1f5f6368cf516c707ac28b07ebe388276e1f8780 assets/dndmod/models/block/yew_slab_top.json
 bdc7297989709e033f14b92cbe45b6e85732a55e assets/dndmod/models/block/yew_stairs.json

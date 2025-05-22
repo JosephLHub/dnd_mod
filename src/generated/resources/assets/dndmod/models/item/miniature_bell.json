@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dndmod:item/tiny_bell"
+    "layer0": "dndmod:item/miniature_bell"
   }
 }

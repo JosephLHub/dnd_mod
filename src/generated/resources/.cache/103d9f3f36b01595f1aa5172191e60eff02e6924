@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-18T00:24:36.1227577	Registries
+// 1.20.1	2025-05-18T21:51:56.3354391	Registries
 12641f9f10d084ffd1340a63e2752d3fe7408edc data/dndmod/forge/biome_modifier/add_adamant_ore.json
 c59f509620e2c6c77ffd1ccea7bfca9fe1a7f258 data/dndmod/forge/biome_modifier/add_chrysolite_ore.json
 7e16dcc25e448d5197fc9070f270a441d8040fdf data/dndmod/forge/biome_modifier/add_end_adamant_ore.json
@@ -35,6 +35,7 @@ dc6037b7220eb7f676c151e4c03301b188f4fa90 data/dndmod/worldgen/configured_feature
 eecd3898ca180c2ee6e6afb2fe162709e4fc652d data/dndmod/worldgen/configured_feature/ruby_ore.json
 7fca7a6b33904b8725f1a58afa2dbf5769dd26cd data/dndmod/worldgen/configured_feature/sapphire_ore.json
 f6d3cd2895afdfd186a9ef6fc5396d6833c0944e data/dndmod/worldgen/configured_feature/silver_ore.json
+73db050ffbfc39f6235c386645f541859dabd93b data/dndmod/worldgen/configured_feature/yew.json
 4e164ad2b910baa4ddc2e4cf826621c2ff8ddf3e data/dndmod/worldgen/placed_feature/adamant_ore_placed.json
 387253d80c9a7b4ab10cb3d565b44eb30c2c6f30 data/dndmod/worldgen/placed_feature/chrysolite_ore_placed.json
 086942b85cdb15a4f73e8d2913e2e1841b9a77fc data/dndmod/worldgen/placed_feature/end_adamant_ore_placed.json

@@ -19,6 +19,7 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> SPELL_COMPONENT = tag("spell_component");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(DnDMod.MOD_ID, name));
