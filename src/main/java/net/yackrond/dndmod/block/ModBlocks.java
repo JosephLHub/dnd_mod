@@ -94,6 +94,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> YEW_HANGING_SIGN = BLOCKS.register("yew_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.YEW));
     public static final RegistryObject<Block> YEW_WALL_HANGING_SIGN = BLOCKS.register("yew_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.YEW));
 
+    //public static final RegistryObject<Block> MITHRIL_CHAIN = BLOCKS.register("mithril_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

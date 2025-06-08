@@ -68,6 +68,7 @@ public class ClientEvents {
                             event.getToolTip().add(Component.literal("Used to cast §5Simulacrum§f, a Level 7 §5Illusion §fspell."));
                             break;
                         case "string":
+                            event.getToolTip().add(Component.literal("Used to cast §eGuards and Wards§f, a Level 6 §eAbjuration §fspell."));
                             event.getToolTip().add(Component.literal("Used to cast §9Unseen Servant§f, a Level 1 §9Conjuration §fspell."));
                             break;
                         case "feather":
