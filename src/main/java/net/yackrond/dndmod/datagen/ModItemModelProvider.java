@@ -43,15 +43,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GOLD_TINGED_FULL_MOON_MISTLETOE);
         simpleItem(ModItems.PLATINUM_PLATED_DRAGON_SCALE);
         simpleItem(ModItems.RARE_INCENSE);
-        simpleItem(ModItems.GLASS_BEAD);
-        simpleItem(ModItems.CRYSTAL_BEAD);
+        simpleItem(ModItems.GLASS_ORB);
+        simpleItem(ModItems.AMETHYST_ORB);
         simpleItem(ModItems.BURNING_INCENSE);
+        simpleItem(ModItems.VIAL_OF_BRIMSTONE_AND_PITCH);
+        simpleItem(ModItems.VIAL_OF_UMBER_HULK_BLOOD);
         simpleItem(ModItems.SILVER_ROD);
         simpleItem(ModItems.QUICKSILVER_BOTTLE);
         simpleItem(ModItems.PHOSPHORUS);
         simpleItem(ModItems.MITHRIL_ORB);
         simpleItem(ModItems.MINIATURE_JADE_PRISON);
         simpleItem(ModItems.SOPORIFIC_HERBS);
+        simpleItem(ModItems.ADAMANTINE_INGOT);
         simpleItem(ModItems.FLEA_IN_BOTTLE);
         simpleItem(ModItems.MIXED_HERBS);
         simpleItem(ModItems.BRASS_BRAZIER);
@@ -74,7 +77,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GILDED_FLOWER);
         simpleItem(ModItems.VIAL_OF_FRESH_BLOOD);
         simpleItem(ModItems.VIAL_OF_BLOOD);
-        simpleItem(ModItems.CRYSTAL_VIAL_OF_TEARS);
+        simpleItem(ModItems.AMETHYST_VIAL_OF_TEARS);
         simpleItem(ModItems.SILVER_WHISTLE);
         simpleItem(ModItems.PLATINUM_VIAL_OF_EYEBALL);
         simpleItem(ModItems.ORNATE_STONE);
@@ -82,7 +85,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ASH);
         simpleItem(ModItems.GOLD_VIAL);
         simpleItem(ModItems.GRAIN);
-        simpleItem(ModItems.GOLDEN_RELIQUARY);
+        simpleItem(ModItems.RELIQUARY);
         simpleItem(ModItems.DRAGON_INSIGNIA);
         simpleItem(ModItems.RUBY_VIAL_OF_FRESH_BLOOD);
         simpleItem(ModItems.RUBY_VIAL_OF_BLOOD);
@@ -190,8 +193,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MINIATURE_CLAY_HAND);
         simpleItem(ModItems.POWDERED_CORN);
         simpleItem(ModItems.TWISTED_PAPER);
+        simpleItem(ModItems.SPIDER_IN_BOTTLE);
         simpleItem(ModItems.SMOKE_IN_BOTTLE);
         simpleItem(ModItems.LIQUORICE_ROOT);
+        simpleItem(ModItems.VIAL_OF_MOLASSES);
         simpleItem(ModItems.CORK);
         simpleItem(ModItems.COCOON);
         simpleItem(ModItems.SESAME_SEEDS);
@@ -204,6 +209,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PRAYER_WHEEL);
         simpleItem(ModItems.POT_OF_DEBRIS);
         simpleItem(ModItems.JADE_CIRCLET);
+        simpleItem(ModItems.GUM_ARABIC);
         simpleItem(ModItems.OIL_BOTTLE);
 
         simpleItem(ModItems.SILVER_INGOT);
@@ -238,6 +244,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.POWDERED_SAPPHIRE);
         simpleItem(ModItems.POWDERED_CHRYSOLITE);
         simpleItem(ModItems.POWDERED_SUNSTONE);
+        simpleItem(ModItems.POWDERED_AMETHYST);
 
         simpleBlockItem(ModBlocks.YEW_DOOR);
         fenceItem(ModBlocks.YEW_FENCE, ModBlocks.YEW_PLANKS);
@@ -254,6 +261,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.YEW_SIGN);
         simpleItem(ModItems.YEW_HANGING_SIGN);
         saplingItem(ModBlocks.YEW_SAPLING);
+
+        simpleItem(ModItems.MITHRIL_CHAIN);
+        simpleItem(ModItems.GOLD_CHAIN);
+        simpleItem(ModItems.SILVER_CHAIN);
+        simpleItem(ModItems.PLATINUM_CHAIN);
+        simpleItem(ModItems.ADAMANT_CHAIN);
 
     }
 

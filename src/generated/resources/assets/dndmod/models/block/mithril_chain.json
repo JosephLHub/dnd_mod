@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/chain",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "all": "dndmod:block/mithril_chain",
+    "particle": "dndmod:block/mithril_chain"
+  }
+}

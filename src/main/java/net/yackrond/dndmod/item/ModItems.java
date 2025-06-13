@@ -2,6 +2,7 @@ package net.yackrond.dndmod.item;
 
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -45,9 +46,9 @@ public class ModItems {
     public static final RegistryObject<Item> LINKED_PLATINUM_RINGS = ITEMS.register("linked_platinum_rings", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§eWarding Bond"), List.of(2), List.of("§eAbjuration")));
     public static final RegistryObject<Item> INCENSE = ITEMS.register("incense", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§eGlyph of Warding", "§9Find Familiar", "§bDivination", "§bCommune", "§bLegend Lore", "§4Hallow"),
+            List.of("§eGlyph of Warding", "§9Find Familiar", "§bDivination", "§bCommune", "§4Hallow"),
             List.of(3, 1, 4, 5, 5, 5),
-            List.of("§eAbjuration", "§9Conjuration", "§bDivination", "§bDivination", "§bDivination", "§4Evocation")));
+            List.of("§eAbjuration", "§9Conjuration", "§bDivination", "§bDivination", "§4Evocation")));
     //public static final RegistryObject<Item> DISTASTEFUL_ITEM = ITEMS.register("distasteful_item", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEATHER_STRAP = ITEMS.register("leather_strap", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§eFreedom of Movement"), List.of(4), List.of("§eAbjuration")));
@@ -68,18 +69,22 @@ public class ModItems {
             List.of("§eGlyph of Warding", "§eForbiddance", "§9Find Familiar", "§bDivination", "§bCommune", "§bLegend Lore", "§4Hallow"),
             List.of(3, 6, 1, 4, 5, 5, 5),
             List.of("§eAbjuration", "§eAbjuration", "§9Conjuration", "§bDivination", "§bDivination", "§bDivination", "§4Evocation")));
-    public static final RegistryObject<Item> GLASS_BEAD = ITEMS.register("glass_bead", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§eGlobe of Invulnerability"), List.of(6), List.of("§eAbjuration")));
-    public static final RegistryObject<Item> CRYSTAL_BEAD = ITEMS.register("crystal_bead", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§eGlobe of Invulnerability","§4Leomund's Tiny Hut"),
-            List.of(6, 3),
-            List.of("§eAbjuration","§4Evocation"))); //TODO: turn into amethyst, consider doing diamond etc, also reexamine uses of all beads & rename to orbs
+    public static final RegistryObject<Item> GLASS_ORB = ITEMS.register("glass_orb", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eGlobe of Invulnerability", "§dFeeblemind"),
+            List.of(6, 8),
+            List.of("§eAbjuration", "§dEnchantment")));
+    public static final RegistryObject<Item> AMETHYST_ORB = ITEMS.register("amethyst_orb", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eGlobe of Invulnerability", "§dFeeblemind", "§4Leomund's Tiny Hut", "§4Otiluke's Freezing Sphere"),
+            List.of(6, 8, 3, 6),
+            List.of("§eAbjuration", "§dEnchantment", "§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> BURNING_INCENSE = ITEMS.register("burning_incense", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§eGuards and Wards", "§9Conjure Elemental", "§5Hypnotic Pattern", "§8Speak with Dead", "§2Control Weather"),
-            List.of(6, 5, 3, 3, 8),
-            List.of("§eAbjuration", "§9Conjuration", "§5Illusion", "§8Necromancy", "§2Transmutation")));
-    //public static final RegistryObject<Item> VIAL_OF_BRIMSTONE_AND_OIL = ITEMS.register("vial_of_brimstone_and_oil", () -> new Item(new Item.Properties()));
-    //public static final RegistryObject<Item> VIAL_OF_UMBER_HULK_BLOOD = ITEMS.register("vial_of_umber_hulk_blood", () -> new Item(new Item.Properties()));
+            List.of("§eGlyph of Warding", "§eGuards and Wards", "§9Conjure Elemental", "§5Hypnotic Pattern", "§8Speak with Dead", "§2Control Weather"),
+            List.of(3, 6, 5, 3, 3, 8),
+            List.of("§eAbjuration", "§eAbjuration", "§9Conjuration", "§5Illusion", "§8Necromancy", "§2Transmutation")));
+    public static final RegistryObject<Item> VIAL_OF_BRIMSTONE_AND_PITCH = ITEMS.register("vial_of_brimstone_and_pitch", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eGuards and Wards"), List.of(6), List.of("§eAbjuration"))); //TODO: implement all vial contents with all types of vial, except unique contents with special vials
+    public static final RegistryObject<Item> VIAL_OF_UMBER_HULK_BLOOD = ITEMS.register("vial_of_umber_hulk_blood", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eGuards and Wards"), List.of(6), List.of("§eAbjuration")));
     public static final RegistryObject<Item> SILVER_ROD = ITEMS.register("silver_rod", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§eGuards and Wards"), List.of(6), List.of("§eAbjuration")));
     public static final RegistryObject<Item> QUICKSILVER_BOTTLE = ITEMS.register("quicksilver_bottle", () -> new SpellComponentItem(new Item.Properties(),
@@ -89,11 +94,9 @@ public class ModItems {
             List.of(7, 5, 0, 4, 4),
             List.of("§eAbjuration", "§9Conjuration", "§4Evocation", "§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> OPAL = ITEMS.register("opal", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§eSymbol", "§2Darkvision"),
-            List.of(2),
-            List.of("§eAbjuration", "§2Transmutation")));
-    //public static final RegistryObject<Item> MINIATURE_RELIQUARY = ITEMS.register("miniature_reliquary", () -> new Item(new Item.Properties()));
-    //public static final RegistryObject<Item> SACRED_RELIC = ITEMS.register("sacred_relic", () -> new Item(new Item.Properties()));
+            List.of("§ePlanar Binding", "§eSymbol", "§dIncite Greed", "§2Darkvision"),
+            List.of(5, 7, 3, 2),
+            List.of("§eAbjuration", "§eAbjuration", "§dEnchantment", "§2Transmutation")));
     //public static final RegistryObject<Item> VELLUM_DEPICTION = ITEMS.register("vellum_depiction", () -> new Item(new Item.Properties()));
     //public static final RegistryObject<Item> CARVED_STATUETTE = ITEMS.register("carved_statuette", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MITHRIL_ORB = ITEMS.register("mithril_orb", () -> new SpellComponentItem(new Item.Properties(),
@@ -103,6 +106,8 @@ public class ModItems {
             List.of("§eImprisonment"), List.of(9), List.of("§eAbjuration")));
     public static final RegistryObject<Item> SOPORIFIC_HERBS = ITEMS.register("soporific_herbs", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§eImprisonment"), List.of(9), List.of("§eAbjuration")));
+    public static final RegistryObject<Item> ADAMANTINE_INGOT = ITEMS.register("adamantine_ingot", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eInvulnerability"), List.of(9), List.of("§eAbjuration")));
     public static final RegistryObject<Item> FLEA_IN_BOTTLE = ITEMS.register("flea_in_bottle", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Infestation"), List.of(0), List.of("§9Conjuration")));
     public static final RegistryObject<Item> MIXED_HERBS = ITEMS.register("mixed_herbs", () -> new SpellComponentItem(new Item.Properties(),
@@ -155,7 +160,10 @@ public class ModItems {
             List.of("§9Spirit Guardians", "§9Temple of the Gods", "§4Word of Radiance"),
             List.of(3, 7, 0),
             List.of("§9Conjuration", "§9Conjuration", "§4Evocation")));
-    public static final RegistryObject<Item> ROTTEN_EGG = ITEMS.register("rotten_egg", () -> new Item(new Item.Properties().food(ModFoods.ROTTEN_EGG))); //TODO: make SpellFood class
+    public static final RegistryObject<Item> ROTTEN_EGG = ITEMS.register("rotten_egg", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§9Stinking Cloud", "§4Tasha's Caustic Brew"),
+            List.of(3, 1),
+            List.of("§9Conjuration", "§4Evocation"))); //TODO: make SpellFood class
     public static final RegistryObject<Item> SKUNK_CABBAGE = ITEMS.register("skunk_cabbage", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Stinking Cloud"), List.of(3), List.of("§9Conjuration")));
     public static final RegistryObject<Item> GILDED_FLOWER = ITEMS.register("gilded_flower", () -> new SpellComponentItem(new Item.Properties(),
@@ -168,7 +176,7 @@ public class ModItems {
             List.of("§dBane", "§4Dark Star", "§8Animate Dead"),
             List.of(1, 8, 3),
             List.of("§dEnchantment", "§4Evocation", "§8Necromancy")));
-    public static final RegistryObject<Item> CRYSTAL_VIAL_OF_TEARS = ITEMS.register("crystal_vial_of_tears", () -> new SpellComponentItem(new Item.Properties(),
+    public static final RegistryObject<Item> AMETHYST_VIAL_OF_TEARS = ITEMS.register("amethyst_vial_of_tears", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Summon Shadowspawn"), List.of(3), List.of("§9Conjuration")));
     //public static final RegistryObject<Item> MINERAL_GOODS = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SILVER_WHISTLE = ITEMS.register("silver_whistle", () -> new SpellComponentItem(new Item.Properties(),
@@ -187,12 +195,15 @@ public class ModItems {
             List.of("§9Summon Elemental"), List.of(4), List.of("§9Conjuration")));
     public static final RegistryObject<Item> GRAIN = ITEMS.register("grain", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Insect Plague"), List.of(5), List.of("§9Conjuration")));
-    public static final RegistryObject<Item> GOLDEN_RELIQUARY = ITEMS.register("golden_reliquary", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§9Summon Celestial"), List.of(5), List.of("§9Conjuration")));
+    public static final RegistryObject<Item> RELIQUARY = ITEMS.register("reliquary", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eHoly Aura", "§9Summon Celestial"),
+            List.of(8, 5),
+            List.of("§eAbjuration", "§9Conjuration")));
+    //TODO: implement a relic as part of the crafting recipe
     public static final RegistryObject<Item> DRAGON_INSIGNIA = ITEMS.register("dragon_insignia", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Summon Draconic Spirit"), List.of(5), List.of("§9Conjuration")));
-    //public static final RegistryObject<Item> GEM_INFUSED_RARE_INK = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
-    //public static final RegistryObject<Item> GEM_INFUSED_RARE_CHALK = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
+    //public static final RegistryObject<Item> GEM_INFUSED_INK = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
+    //public static final RegistryObject<Item> GEM_INFUSED_CHALK = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
     //public static final RegistryObject<Item> GEM_ENCRUSTED_BOWL = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUBY_VIAL_OF_BLOOD = ITEMS.register("ruby_vial_of_blood", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Summon Fiend", "§dBane", "§4Dark Star", "§8Animate Dead"),
@@ -222,7 +233,7 @@ public class ModItems {
             List.of("§9Plane Shift", "§bFind the Path"),
             List.of(7, 6),
             List.of("§9Conjuration", "§bDivination")));
-    //public static final RegistryObject<Item> CRYSTAL_PRISM = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
+    //public static final RegistryObject<Item> AMETHYST_PRISM = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CLOTH_WRAPPED_FUR = ITEMS.register("cloth_wrapped_fur", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§bBeast Bond"), List.of(1), List.of("§bDivination")));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new SpellComponentItem(new Item.Properties(),
@@ -230,9 +241,9 @@ public class ModItems {
             List.of(1, 2),
             List.of("§bDivination", "§8Necromancy")));
     public static final RegistryObject<Item> PEARL = ITEMS.register("pearl", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§bIdentify", "§bFortune's Favour"),
-            List.of(1, 2),
-            List.of("§bDivination", "§bDivination")));
+            List.of("§ePlanar Binding", "§bIdentify", "§bFortune's Favour"),
+            List.of(5, 1, 2),
+            List.of("§eAbjuration", "§bDivination", "§bDivination")));
     public static final RegistryObject<Item> OWL_FEATHER = ITEMS.register("owl_feather", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§9Summon Beast", "§bIdentify", "§dTasha's Hideous Laughter", "§2Feather Fall", "§2Enhance Ability", "§2Fly"),
             List.of(2, 1, 1, 1, 2, 3),
@@ -252,7 +263,7 @@ public class ModItems {
     public static final RegistryObject<Item> TUNING_FORK = ITEMS.register("tuning_fork", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§bLocate Object", "§bFind the Path"),
             List.of(2, 6),
-            List.of("§bDivination", "§bDivination")));
+            List.of("§bDivination", "§bDivination"))); //TODO: for 'Find the Path' and other spells requiring a location/monster-specific item to produce a specific effect, ignore as SpellComponent and handle within spell logic
     public static final RegistryObject<Item> TALC = ITEMS.register("talc", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§bSee Invisibility"), List.of(2), List.of("§bDivination")));
     //public static final RegistryObject<Item> RAZORVINE_LEAF = ITEMS.register("skunk_cabbage", () -> new Item(new Item.Properties()));
@@ -262,9 +273,9 @@ public class ModItems {
     public static final RegistryObject<Item> MINIATURE_CLAY_ZIGGURAT = ITEMS.register("miniature_clay_ziggurat", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§bTongues"), List.of(3), List.of("§bDivination")));
     public static final RegistryObject<Item> BAT_FUR = ITEMS.register("bat_fur", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§9Summon Beast", "§bArcane Eye", "§4Lightning Bolt", "§4Chain Lightning", "§2Enhance Ability"),
+            List.of("§9Summon Beast", "§bArcane Eye", "§4Darkness", "§4Lightning Bolt", "§4Chain Lightning", "§2Enhance Ability"),
             List.of(2, 4, 3, 6, 2),
-            List.of("§9Conjuration", "§bDivination", "§4Evocation", "§4Evocation", "§2Transmutation")));
+            List.of("§9Conjuration", "§bDivination", "§4Evocation", "§4Evocation", "§4Evocation", "§2Transmutation")));
     public static final RegistryObject<Item> VIAL_OF_HOLY_WATER = ITEMS.register("vial_of_holy_water", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§bForbiddance", "§bCommune", "§dBless", "§8True Resurrection"),
             List.of(6, 5, 1, 9),
@@ -278,7 +289,9 @@ public class ModItems {
     public static final RegistryObject<Item> VIAL_OF_EYE_OINTMENT = ITEMS.register("vial_of_eye_ointment", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§bTrue Seeing"), List.of(6), List.of("§bDivination")));
     public static final RegistryObject<Item> HUMMINGBIRD_FEATHER = ITEMS.register("hummingbird_feather", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§bForesight"), List.of(9), List.of("§bDivination")));
+            List.of("§9Summon Beast", "§bForesight", "§dTasha's Hideous Laughter", "§4Wind Wall", "§2Feather Fall", "§2Enhance Ability", "§2Fly"),
+            List.of(2, 9, 1, 1, 2, 3),
+            List.of("§9Conjuration", "§bDivination", "§dEnchantment", "§4Evocation", "§2Transmutation", "§2Transmutation", "§2Transmutation")));
     public static final RegistryObject<Item> PETRIFIED_NEWT_EYE = ITEMS.register("petrified_newt_eye", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§dHex"), List.of(1), List.of("§dEnchantment")));
     public static final RegistryObject<Item> ROSE_PETAL = ITEMS.register("rose_petal", () -> new SpellComponentItem(new Item.Properties(),
@@ -316,13 +329,21 @@ public class ModItems {
     public static final RegistryObject<Item> CLAY_ORB = ITEMS.register("clay_orb", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§dFeeblemind"), List.of(8), List.of("§dEnchantment")));
     public static final RegistryObject<Item> DIAMOND_ORB = ITEMS.register("diamond_orb", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§dFeeblemind"), List.of(8), List.of("§dEnchantment")));
+            List.of("§eGlobe of Invulnerability", "§dFeeblemind", "§4Leomund's Tiny Hut", "§4Otiluke's Freezing Sphere"),
+            List.of(6, 8, 3, 6),
+            List.of("§eAbjuration", "§dEnchantment", "§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> EMERALD_ORB = ITEMS.register("emerald_orb", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§dFeeblemind"), List.of(8), List.of("§dEnchantment")));
+            List.of("§eGlobe of Invulnerability", "§dFeeblemind", "§4Leomund's Tiny Hut", "§4Otiluke's Freezing Sphere"),
+            List.of(6, 8, 3, 6),
+            List.of("§eAbjuration", "§dEnchantment", "§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> RUBY_ORB = ITEMS.register("ruby_orb", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§dFeeblemind"), List.of(8), List.of("§dEnchantment")));
+            List.of("§eGlobe of Invulnerability", "§dFeeblemind", "§4Leomund's Tiny Hut", "§4Otiluke's Freezing Sphere"),
+            List.of(6, 8, 3, 6),
+            List.of("§eAbjuration", "§dEnchantment", "§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> SAPPHIRE_ORB = ITEMS.register("sapphire_orb", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§dFeeblemind"), List.of(8), List.of("§dEnchantment")));
+            List.of("§eGlobe of Invulnerability", "§dFeeblemind", "§4Leomund's Tiny Hut", "§4Otiluke's Freezing Sphere"),
+            List.of(6, 8, 3, 6),
+            List.of("§eAbjuration", "§dEnchantment", "§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> GLOWWORM_IN_BOTTLE = ITEMS.register("glowworm_in_bottle", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§4Dancing Lights"), List.of(0), List.of("§4Evocation")));
     public static final RegistryObject<Item> FIREFLY_IN_BOTTLE = ITEMS.register("firefly_in_bottle", () -> new SpellComponentItem(new Item.Properties(),
@@ -354,13 +375,21 @@ public class ModItems {
     //public static final RegistryObject<Item> MICA_CHIP = ITEMS.register("aaaaaaaaaaaaa", () -> new SpellComponentItem(new Item.Properties(),
     //            List.of("§4AAAAAAAAA"), List.of(1), List.of("§4Evocation"))); TODO: maybe implement with nether quartz instead
     public static final RegistryObject<Item> FLAMMABLE_ORB = ITEMS.register("flammable_orb", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§4Fireball", "§4Delayed Blast Fireball"), List.of(3, 7), List.of("§4Evocation", "§4Evocation")));
+            List.of("§4Fireball", "§4Delayed Blast Fireball"),
+            List.of(3, 7),
+            List.of("§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> AMBER_ROD = ITEMS.register("amber_rod", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§4Lightning Bolt", "§4Chain Lightning"), List.of(3, 6), List.of("§4Evocation", "§4Evocation")));
+            List.of("§4Lightning Bolt", "§4Chain Lightning"),
+            List.of(3, 6),
+            List.of("§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> AMETHYST_ROD = ITEMS.register("amethyst_rod", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§4Lightning Bolt", "§4Chain Lightning", "§2Create Spelljamming Helm"), List.of(3, 6, 5), List.of("§4Evocation", "§4Evocation", "§2Transmutation")));
+            List.of("§4Lightning Bolt", "§4Chain Lightning", "§2Create Spelljamming Helm"),
+            List.of(3, 6, 5),
+            List.of("§4Evocation", "§4Evocation", "§2Transmutation")));
     public static final RegistryObject<Item> GLASS_ROD = ITEMS.register("glass_rod", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§4Lightning Bolt", "§4Chain Lightning"), List.of(3, 6), List.of("§4Evocation", "§4Evocation")));
+            List.of("§4Lightning Bolt", "§4Chain Lightning"),
+            List.of(3, 6),
+            List.of("§4Evocation", "§4Evocation")));
     public static final RegistryObject<Item> EXPLOSIVE_ORB = ITEMS.register("explosive_orb", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§4Melf's Minute Meteors"), List.of(3), List.of("§4Evocation")));
     public static final RegistryObject<Item> COPPER_WIRE = ITEMS.register("copper_wire", () -> new SpellComponentItem(new Item.Properties(),
@@ -370,7 +399,9 @@ public class ModItems {
     public static final RegistryObject<Item> PAPER_FAN = ITEMS.register("paper_fan", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§4Wind Wall"), List.of(3), List.of("§4Evocation")));
     public static final RegistryObject<Item> BLACK_PEARL = ITEMS.register("black_pearl", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§4Gravity Sinkhole"), List.of(4), List.of("§4Evocation")));
+            List.of("§ePlanar Binding", "§4Gravity Sinkhole"),
+            List.of(5, 4),
+            List.of("§eAbjuration", "§4Evocation")));
     public static final RegistryObject<Item> GLASS_HALF_ORB = ITEMS.register("glass_half_orb", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§4Otiluke's Resilient Sphere"), List.of(4), List.of("§4Evocation")));
     public static final RegistryObject<Item> GUM_ARABIC_HALF_ORB = ITEMS.register("gum_arabic_half_orb", () -> new SpellComponentItem(new Item.Properties(),
@@ -398,7 +429,9 @@ public class ModItems {
     public static final RegistryObject<Item> ORNAMENTAL_SWORD = ITEMS.register("ornamental_sword", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§4Mordenkainen's Sword"), List.of(7), List.of("§4Evocation")));
     public static final RegistryObject<Item> ONYX = ITEMS.register("onyx", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§4Dark Star", "§8Create Undead"), List.of(8, 6), List.of("§4Evocation", "§8Necromancy")));
+            List.of("§ePlanar Binding", "§4Dark Star", "§dIncite Greed", "§8Create Undead"),
+            List.of(5, 8, 3, 6),
+            List.of("§eAbjuration", "§4Evocation", "§dEnchantment", "§8Necromancy")));
     public static final RegistryObject<Item> VIAL_OF_PITCH_AND_QUICKSILVER = ITEMS.register("vial_of_pitch_and_quicksilver", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§4Maddening Darkness"), List.of(8), List.of("§4Evocation")));
     public static final RegistryObject<Item> LINKED_SILVER_RINGS = ITEMS.register("linked_silver_rings", () -> new SpellComponentItem(new Item.Properties(),
@@ -410,7 +443,9 @@ public class ModItems {
     public static final RegistryObject<Item> EYELASH_IN_GUM_ARABIC = ITEMS.register("eyelash_in_gum_arabic", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§5Invisibility"), List.of(2), List.of("§5Illusion")));
     public static final RegistryObject<Item> POWDERED_JADE = ITEMS.register("powdered_jade", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§5Magic Mouth"), List.of(2), List.of("§5Illusion")));
+            List.of("§5Magic Mouth", "§5Programmed Illusion"),
+            List.of(2, 6),
+            List.of("§5Illusion", "§5Illusion")));
     public static final RegistryObject<Item> APPLE_PIE_CRUST = ITEMS.register("apple_pie_crust", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§5Nathair's Mischief"), List.of(2), List.of("§5Illusion")));
     public static final RegistryObject<Item> SILK = ITEMS.register("silk", () -> new SpellComponentItem(new Item.Properties(),
@@ -457,24 +492,26 @@ public class ModItems {
             List.of("§2Shillelagh"), List.of(0), List.of("§2Transmutation")));
     public static final RegistryObject<Item> DRIED_CARROT = ITEMS.register("dried_carrot", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Darkvision"), List.of(2), List.of("§2Transmutation")));
-    //TODO: implement 'agate' as amethyst & quartz
     public static final RegistryObject<Item> HOT_PEPPER = ITEMS.register("hot_pepper", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Dragon's Breath"), List.of(2), List.of("§2Transmutation")));
     public static final RegistryObject<Item> GOLD_HOOK = ITEMS.register("gold_hook", () -> new SpellComponentItem(new Item.Properties(),
-            List.of("§2Levitate"), List.of(2), List.of("§2Transmutation"))); //TODO: implement leash as a catalyst for this same spell & crafting recipe of gold hook must involve gold wire
+            List.of("§2Levitate"), List.of(2), List.of("§2Transmutation"))); //TODO: crafting recipe of gold hook must involve gold wire
     public static final RegistryObject<Item> MINIATURE_CLAY_HAND = ITEMS.register("miniature_clay_hand", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Maximillian's Earthen Grasp"), List.of(2), List.of("§2Transmutation")));
     public static final RegistryObject<Item> POWDERED_CORN = ITEMS.register("powdered_corn", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Rope Trick"), List.of(2), List.of("§2Transmutation")));
     public static final RegistryObject<Item> TWISTED_PAPER = ITEMS.register("twisted_paper", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Rope Trick"), List.of(2), List.of("§2Transmutation")));
+    public static final RegistryObject<Item> SPIDER_IN_BOTTLE = ITEMS.register("spider_in_bottle", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§2Spider Climb"), List.of(2), List.of("§2Transmutation")));
     public static final RegistryObject<Item> SMOKE_IN_BOTTLE = ITEMS.register("smoke_in_bottle", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Gaseous Form", "§2True Polymorph"),
             List.of(3, 9),
             List.of("§2Transmutation", "§2Transmutation")));
     public static final RegistryObject<Item> LIQUORICE_ROOT = ITEMS.register("liquorice_root", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Haste"), List.of(3), List.of("§2Transmutation")));
-    //TODO: implement 'water breathing' as sugar cane & wheat
+    public static final RegistryObject<Item> VIAL_OF_MOLASSES = ITEMS.register("vial_of_molasses", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§2Slow"), List.of(3), List.of("§2Transmutation")));
     public static final RegistryObject<Item> CORK = ITEMS.register("cork", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Water Walk"), List.of(3), List.of("§2Transmutation")));
     public static final RegistryObject<Item> COCOON = ITEMS.register("cocoon", () -> new SpellComponentItem(new Item.Properties(),
@@ -490,16 +527,12 @@ public class ModItems {
             List.of("§2Create Homunculus"), List.of(6), List.of("§2Transmutation")));
     //public static final RegistryObject<Item> GEM_ENCRUSTED_DAGGER = ITEMS.register("aaaaaaaaaaaaa", () -> new SpellComponentItem(new Item.Properties(),
     //            List.of("§2AAAAAAAAA"), List.of(1), List.of("§2Transmutation")));
-    //TODO: replace lime with bone meal
-    //public static final RegistryObject<Item> LIME = ITEMS.register("aaaaaaaaaaaaa", () -> new SpellComponentItem(new Item.Properties(),
-    //            List.of("§2AAAAAAAAA"), List.of(1), List.of("§2Transmutation")));
     public static final RegistryObject<Item> IRON_BLADE = ITEMS.register("iron_blade", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Move Earth"), List.of(6), List.of("§2Transmutation")));
     public static final RegistryObject<Item> BAG_OF_SOILS = ITEMS.register("bag_of_soils", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Move Earth"), List.of(6), List.of("§2Transmutation")));
     public static final RegistryObject<Item> OUTER_PLANES_INSIGNIA = ITEMS.register("outer_planes_insignia", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Tasha's Otherworldly Guise"), List.of(6), List.of("§2Transmutation")));
-    //TODO: implement Tenser's Transformation as leather
     public static final RegistryObject<Item> ORNATE_AMETHYST_ROD = ITEMS.register("ornate_amethyst_rod", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Create Magen"), List.of(7), List.of("§2Transmutation")));
     //TODO: maybe implement dragon statuette as block?
@@ -511,6 +544,8 @@ public class ModItems {
             List.of("§2Control Weather"), List.of(8), List.of("§2Transmutation")));
     public static final RegistryObject<Item> JADE_CIRCLET = ITEMS.register("jade_circlet", () -> new SpellComponentItem(new Item.Properties(),
             List.of("§2Shapechange"), List.of(9), List.of("§2Transmutation")));
+    public static final RegistryObject<Item> GUM_ARABIC = ITEMS.register("gum_arabic", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§2True Polymorph"), List.of(9), List.of("§2Transmutation")));
 
 
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new Item(new Item.Properties()));
@@ -530,15 +565,27 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POWDERED_COPPER = ITEMS.register("powdered_copper", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CHRYSOLITE = ITEMS.register("chrysolite", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sunstone", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§ePlanar Binding", "§9Infernal Calling", "§dIncite Greed", "§8Astral Projection"),
+            List.of(5, 5, 3, 9),
+            List.of("§eAbjuration", "§9Conjuration", "§dEnchantment", "§8Necromancy")));
+    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§ePlanar Binding", "§9Drawmij's Instant Summons", "§dIncite Greed"),
+            List.of(5, 6, 3),
+            List.of("§eAbjuration", "§9Conjuration", "§dEnchantment")));
+    public static final RegistryObject<Item> CHRYSOLITE = ITEMS.register("chrysolite", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§ePlanar Binding", "§dIncite Greed"),
+            List.of(5, 3),
+            List.of("§eAbjuration", "§dEnchantment")));
+    public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sunstone", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§ePlanar Binding", "§dIncite Greed", "§4Sunburst"),
+            List.of(5, 3, 8),
+            List.of("§eAbjuration", "§dEnchantment", "§4Evocation")));
 
     public static final RegistryObject<Item> POWDERED_DIAMOND = ITEMS.register("powdered_diamond", () -> new SpellComponentItem(new Item.Properties(),
-                    List.of("§eGlyph of Warding", "§eNondetection", "§eStoneskin", "§eGreater Restoration", "§eSymbol", "§2Sequester"),
-                    List.of(3, 3, 4, 5, 7, 7),
-                    List.of("§eAbjuration", "§eAbjuration", "§eAbjuration", "§eAbjuration", "§eAbjuration", "§2Transmutation")));
+                    List.of("§eGlyph of Warding", "§eNondetection", "§eStoneskin", "§eGreater Restoration", "§eSymbol", "§4Wall of Force", "§2Sequester"),
+                    List.of(3, 3, 4, 5, 7, 5, 7),
+                    List.of("§eAbjuration", "§eAbjuration", "§eAbjuration", "§eAbjuration", "§eAbjuration", "§4Evocation", "§2Transmutation")));
     public static final RegistryObject<Item> POWDERED_IRON = ITEMS.register("powdered_iron", () -> new SpellComponentItem(new Item.Properties(),
                     List.of("§eProtection from Evil and Good", "§eMagic Circle", "§eDispel Evil and Good", "§eAntimagic Field", "§9Flaming Sphere", "§4Gravity Fissure", "§2Enlarge/Reduce", "§2Reverse Gravity"),
                     List.of(1, 3, 5, 8, 2, 6, 2, 2, 7),
@@ -547,14 +594,25 @@ public class ModItems {
                     List.of("§eArcane Lock", "§6Immovable Object"),
                     List.of(2, 2),
                     List.of("§eAbjuration", "§6Transmutation")));
-    public static final RegistryObject<Item> POWDERED_SILVER = ITEMS.register("powdered_silver", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POWDERED_SILVER = ITEMS.register("powdered_silver", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eProtection from Evil and Good", "§eMagic Circle", "§eDispel Evil and Good", "§bSee Invisibility", "§4Ceremony"),
+            List.of(1, 3, 5, 2, 1),
+            List.of("§eAbjuration", "§eAbjuration", "§eAbjuration", "§bDivination", "§4Evocation")));
     public static final RegistryObject<Item> POWDERED_PLATINUM = ITEMS.register("powdered_platinum", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POWDERED_ADAMANT = ITEMS.register("powdered_adamant", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POWDERED_RUBY = ITEMS.register("powdered_ruby", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POWDERED_SAPPHIRE = ITEMS.register("powdered_sapphire", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POWDERED_CHRYSOLITE = ITEMS.register("powdered_chrysolite", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POWDERED_EMERALD = ITEMS.register("powdered_emerald", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POWDERED_RUBY = ITEMS.register("powdered_ruby", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eForbiddance", "§4Continual Flame", "§4Forcecage", "§5Simulacrum", "§2Sequester"),
+            List.of(6, 2, 7, 7, 7),
+            List.of("§eAbjuration", "§4Evocation", "§4Evocation", "§5Illusion", "§2Transmutation")));
+    public static final RegistryObject<Item> POWDERED_SAPPHIRE = ITEMS.register("powdered_sapphire", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§2Sequester"), List.of(7), List.of("§2Transmutation")));
+    public static final RegistryObject<Item> POWDERED_CHRYSOLITE = ITEMS.register("powdered_chrysolite", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§eMordenkainen’s Private Sanctum"), List.of(4), List.of("§eAbjuration")));
+    public static final RegistryObject<Item> POWDERED_EMERALD = ITEMS.register("powdered_emerald", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§2Sequester"), List.of(7), List.of("§2Transmutation")));
     public static final RegistryObject<Item> POWDERED_SUNSTONE = ITEMS.register("powdered_sunstone", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POWDERED_AMETHYST = ITEMS.register("powdered_amethyst", () -> new SpellComponentItem(new Item.Properties(),
+            List.of("§4Wall of Force"), List.of(5), List.of("§4Evocation")));
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector", () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
@@ -562,7 +620,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> YEW_SIGN = ITEMS.register("yew_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.YEW_SIGN.get(), ModBlocks.YEW_WALL_SIGN.get()));
     public static final RegistryObject<Item> YEW_HANGING_SIGN = ITEMS.register("yew_hanging_sign", () -> new HangingSignItem(ModBlocks.YEW_HANGING_SIGN.get(), ModBlocks.YEW_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
-
+    public static final RegistryObject<Item> MITHRIL_CHAIN = ITEMS.register("mithril_chain", () -> new BlockItem(ModBlocks.MITHRIL_CHAIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GOLD_CHAIN = ITEMS.register("gold_chain", () -> new BlockItem(ModBlocks.GOLD_CHAIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_CHAIN = ITEMS.register("silver_chain", () -> new BlockItem(ModBlocks.SILVER_CHAIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PLATINUM_CHAIN = ITEMS.register("platinum_chain", () -> new BlockItem(ModBlocks.PLATINUM_CHAIN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ADAMANT_CHAIN = ITEMS.register("adamant_chain", () -> new BlockItem(ModBlocks.ADAMANT_CHAIN.get(), new Item.Properties()));
 //    public static final RegistryObject<Item> MODDED_SWORD = ITEMS.register("modded_sword",
 //            () -> new SwordItem(ModToolTiers.ADAMANTIUM, 4, 2, new Item.Properties()));
 //    public static final RegistryObject<Item> MODDED_PICKAXE = ITEMS.register("modded_pickaxe",

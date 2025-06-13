@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/chain",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "all": "dndmod:block/adamant_chain",
+    "particle": "dndmod:block/adamant_chain"
+  }
+}

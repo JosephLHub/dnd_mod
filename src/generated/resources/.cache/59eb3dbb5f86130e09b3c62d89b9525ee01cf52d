@@ -1,5 +1,6 @@
-// 1.20.1	2025-05-26T15:43:39.3896046	Loot Tables
+// 1.20.1	2025-06-12T13:27:43.6822039	Loot Tables
 58fde54f505b87b89d75faa3faaaa2d1e4f961ce data/dndmod/loot_tables/blocks/adamant_block.json
+330b1ccee7d9131bd902d5958dd04d1bad8ac902 data/dndmod/loot_tables/blocks/adamant_chain.json
 b9b7dd6d83093cec06e84d03479d1768014c0c37 data/dndmod/loot_tables/blocks/adamant_ore.json
 f74cd824c5ce7fa7400f3c9de046d600c1770fca data/dndmod/loot_tables/blocks/chrysolite_block.json
 9c154176fb09b10d95f3d5f1639a400002d6d285 data/dndmod/loot_tables/blocks/chrysolite_ore.json
@@ -17,7 +18,9 @@ fcb53a10c967580df9a0ff8f0952ad473f37a4a9 data/dndmod/loot_tables/blocks/end_ruby
 3f9d8830e34dcccd4b7398f2435cc6758ef13bb9 data/dndmod/loot_tables/blocks/end_sapphire_ore.json
 7aa37c93ed7ee6e178f96885eacb669a5f90e3ef data/dndmod/loot_tables/blocks/end_silver_ore.json
 c14c02e1889f8208f5bd53d93c5475e47e0c26ca data/dndmod/loot_tables/blocks/end_sunstone_ore.json
+706d62dc7342fd2fe729e1d0858c12091526bec9 data/dndmod/loot_tables/blocks/gold_chain.json
 5a18c112fcca4f46f0f9e88d80131e6611806ecb data/dndmod/loot_tables/blocks/macerator.json
+6b37fa99b8d3c548bcad4234caf08613a99ee1e7 data/dndmod/loot_tables/blocks/mithril_chain.json
 87548c0b53e656f965875cf89eb88f4c22c117e9 data/dndmod/loot_tables/blocks/nether_adamant_ore.json
 e30ed1053d6533e3105a7f6d0a12fc62923175fc data/dndmod/loot_tables/blocks/nether_chrysolite_ore.json
 946756570e578c80ed852e6d914a70eadbbfb7cd data/dndmod/loot_tables/blocks/nether_platinum_ore.json
@@ -26,6 +29,7 @@ e30ed1053d6533e3105a7f6d0a12fc62923175fc data/dndmod/loot_tables/blocks/nether_c
 0d1e9d32aba3fb525aea5d012a2eefc4e49adfb0 data/dndmod/loot_tables/blocks/nether_silver_ore.json
 5705a4173e3dcbf7b441b71f8abc3a4ac40ab0a0 data/dndmod/loot_tables/blocks/nether_sunstone_ore.json
 2b555dcd142d5ced295cf5bb65fc64f02cb6ac8c data/dndmod/loot_tables/blocks/platinum_block.json
+bc7d0ecab3a5052cc57171786846e98f0f0cd95a data/dndmod/loot_tables/blocks/platinum_chain.json
 71eafd231cb9d171bd1cf594f19632ad2d3dd22a data/dndmod/loot_tables/blocks/platinum_ore.json
 f976cac6c7e9d94540dbdf3143f0dfeb0df6d795 data/dndmod/loot_tables/blocks/raw_adamant_block.json
 e6d67bfc92d24804f64882a25118a70e8a0d25e4 data/dndmod/loot_tables/blocks/raw_platinum_block.json
@@ -35,6 +39,7 @@ aae9e557006179756fbdd900fd049ada4f766fcc data/dndmod/loot_tables/blocks/ruby_ore
 6acae0c602518bb0e6dfe4ceb3a4182e679f70eb data/dndmod/loot_tables/blocks/sapphire_block.json
 925f1b87f278b457c5b3e1d7d8d66b39ce132dc3 data/dndmod/loot_tables/blocks/sapphire_ore.json
 387264553b005e47d780652792a74e0b0d04de71 data/dndmod/loot_tables/blocks/silver_block.json
+8b7e11b1d094b19e0ad5910449480d9f147cee1c data/dndmod/loot_tables/blocks/silver_chain.json
 7e3245d729ea730fd7f250ca88c353155f2f79cb data/dndmod/loot_tables/blocks/silver_ore.json
 464b43b3b58dc7df5d4b58ad79cc4bd1f1c24e14 data/dndmod/loot_tables/blocks/silver_wall.json
 e795a763583a78407b0ab0f455b7e84f6c449624 data/dndmod/loot_tables/blocks/sound_block.json

@@ -93,9 +93,11 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.GOLD_TINGED_FULL_MOON_MISTLETOE.get());
                 pOutput.accept(ModItems.PLATINUM_PLATED_DRAGON_SCALE.get());
                 pOutput.accept(ModItems.RARE_INCENSE.get());
-                pOutput.accept(ModItems.GLASS_BEAD.get());
-                pOutput.accept(ModItems.CRYSTAL_BEAD.get());
+                pOutput.accept(ModItems.GLASS_ORB.get());
+                pOutput.accept(ModItems.AMETHYST_ORB.get());
                 pOutput.accept(ModItems.BURNING_INCENSE.get());
+                pOutput.accept(ModItems.VIAL_OF_BRIMSTONE_AND_PITCH.get());
+                pOutput.accept(ModItems.VIAL_OF_UMBER_HULK_BLOOD.get());
                 pOutput.accept(ModItems.SILVER_ROD.get());
                 pOutput.accept(ModItems.QUICKSILVER_BOTTLE.get());
                 pOutput.accept(ModItems.PHOSPHORUS.get());
@@ -103,6 +105,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.MITHRIL_ORB.get());
                 pOutput.accept(ModItems.MINIATURE_JADE_PRISON.get());
                 pOutput.accept(ModItems.SOPORIFIC_HERBS.get());
+                pOutput.accept(ModItems.ADAMANTINE_INGOT.get());
                 pOutput.accept(ModItems.FLEA_IN_BOTTLE.get());
                 pOutput.accept(ModItems.MIXED_HERBS.get());
                 pOutput.accept(ModItems.BRASS_BRAZIER.get());
@@ -125,7 +128,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.GILDED_FLOWER.get());
                 pOutput.accept(ModItems.VIAL_OF_FRESH_BLOOD.get());
                 pOutput.accept(ModItems.VIAL_OF_BLOOD.get());
-                pOutput.accept(ModItems.CRYSTAL_VIAL_OF_TEARS.get());
+                pOutput.accept(ModItems.AMETHYST_VIAL_OF_TEARS.get());
                 pOutput.accept(ModItems.SILVER_WHISTLE.get());
                 pOutput.accept(ModItems.PLATINUM_VIAL_OF_EYEBALL.get());
                 pOutput.accept(ModItems.ORNATE_STONE.get());
@@ -133,7 +136,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.ASH.get());
                 pOutput.accept(ModItems.GOLD_VIAL.get());
                 pOutput.accept(ModItems.GRAIN.get());
-                pOutput.accept(ModItems.GOLDEN_RELIQUARY.get());
+                pOutput.accept(ModItems.RELIQUARY.get());
                 pOutput.accept(ModItems.DRAGON_INSIGNIA.get());
                 pOutput.accept(ModItems.RUBY_VIAL_OF_FRESH_BLOOD.get());
                 pOutput.accept(ModItems.RUBY_VIAL_OF_BLOOD.get());
@@ -241,8 +244,10 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.MINIATURE_CLAY_HAND.get());
                 pOutput.accept(ModItems.POWDERED_CORN.get());
                 pOutput.accept(ModItems.TWISTED_PAPER.get());
+                pOutput.accept(ModItems.SPIDER_IN_BOTTLE.get());
                 pOutput.accept(ModItems.SMOKE_IN_BOTTLE.get());
                 pOutput.accept(ModItems.LIQUORICE_ROOT.get());
+                pOutput.accept(ModItems.VIAL_OF_MOLASSES.get());
                 pOutput.accept(ModItems.CORK.get());
                 pOutput.accept(ModItems.COCOON.get());
                 pOutput.accept(ModItems.SESAME_SEEDS.get());
@@ -255,6 +260,12 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.PRAYER_WHEEL.get());
                 pOutput.accept(ModItems.POT_OF_DEBRIS.get());
                 pOutput.accept(ModItems.JADE_CIRCLET.get());
+                pOutput.accept(ModItems.GUM_ARABIC.get());
+                pOutput.accept(ModItems.MITHRIL_CHAIN.get());
+                pOutput.accept(ModItems.GOLD_CHAIN.get());
+                pOutput.accept(ModItems.SILVER_CHAIN.get());
+                pOutput.accept(ModItems.PLATINUM_CHAIN.get());
+                pOutput.accept(ModItems.ADAMANT_CHAIN.get());
                 pOutput.accept(ModItems.OIL_BOTTLE.get());
 
             }).build());

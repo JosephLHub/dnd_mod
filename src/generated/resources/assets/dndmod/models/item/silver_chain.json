@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dndmod:item/crystal_vial_of_tears"
+    "layer0": "dndmod:item/silver_chain"
   }
 }

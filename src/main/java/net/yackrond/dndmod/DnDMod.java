@@ -133,6 +133,7 @@ public class DnDMod
             event.accept(ModItems.POWDERED_SAPPHIRE);
             event.accept(ModItems.POWDERED_CHRYSOLITE);
             event.accept(ModItems.POWDERED_SUNSTONE);
+            event.accept(ModItems.POWDERED_AMETHYST);
             event.accept(ModItems.CURED_LEATHER);
             event.accept(ModItems.MISTLETOE_ASHES);
         }

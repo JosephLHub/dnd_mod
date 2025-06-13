@@ -1,9 +1,12 @@
 package net.yackrond.dndmod.datagen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -95,6 +98,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.YEW_HANGING_SIGN.get(), ModBlocks.YEW_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.YEW_PLANKS.get()));
         saplingBlock(ModBlocks.YEW_SAPLING);
 
+        blockItem(ModBlocks.MITHRIL_CHAIN);
+        chainBlock(ModBlocks.MITHRIL_CHAIN.get(), blockTexture(ModBlocks.MITHRIL_CHAIN.get()));
+        blockItem(ModBlocks.GOLD_CHAIN);
+        chainBlock(ModBlocks.GOLD_CHAIN.get(), blockTexture(ModBlocks.GOLD_CHAIN.get()));
+        blockItem(ModBlocks.SILVER_CHAIN);
+        chainBlock(ModBlocks.SILVER_CHAIN.get(), blockTexture(ModBlocks.SILVER_CHAIN.get()));
+        blockItem(ModBlocks.PLATINUM_CHAIN);
+        chainBlock(ModBlocks.PLATINUM_CHAIN.get(), blockTexture(ModBlocks.PLATINUM_CHAIN.get()));
+        blockItem(ModBlocks.ADAMANT_CHAIN);
+        chainBlock(ModBlocks.ADAMANT_CHAIN.get(), blockTexture(ModBlocks.ADAMANT_CHAIN.get()));
+
         //MACHINES
         simpleBlockWithItem(ModBlocks.MACERATOR.get(), new ModelFile.UncheckedModelFile(modLoc("block/macerator")));
         blockWithItem(ModBlocks.SOUND_BLOCK);
@@ -104,6 +118,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
                 models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void chainBlock(Block chainBlock, ResourceLocation loc) {
+        ModelFile model = models().withExistingParent(chainBlock.asItem().toString(), mcLoc("block/chain"))
+                .renderType("cutout_mipped")
+                .texture("particle", loc)
+                .texture("all", loc);
+
+        getVariantBuilder(chainBlock).forAllStatesExcept(
+                state -> ConfiguredModel.builder()
+                        .modelFile(model)
+                        .rotationX(state.getValue(BlockStateProperties.AXIS) != Direction.Axis.Y ? 90 : 0)
+                        .rotationY(state.getValue(BlockStateProperties.AXIS) == Direction.Axis.X ? 90 : 0)
+                        .build(),
+                BlockStateProperties.WATERLOGGED
+        );
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

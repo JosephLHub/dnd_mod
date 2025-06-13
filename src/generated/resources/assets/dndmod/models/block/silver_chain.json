@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/chain",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "all": "dndmod:block/silver_chain",
+    "particle": "dndmod:block/silver_chain"
+  }
+}

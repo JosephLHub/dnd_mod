@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dndmod:item/glass_bead"
+    "layer0": "dndmod:item/mithril_chain"
   }
 }

@@ -1,5 +1,6 @@
-// 1.20.1	2025-05-26T15:43:39.3936095	Block States: dndmod
+// 1.20.1	2025-06-12T13:27:43.685206	Block States: dndmod
 c1c5139d0d10bfb56fad0be96c7ea6f2ef5d5a2d assets/dndmod/blockstates/adamant_block.json
+abf5dbea4802cc7a5b3ed609af63565f128495ce assets/dndmod/blockstates/adamant_chain.json
 05abf3dfff198098f4ba9b632cbe4433d7c9bcd7 assets/dndmod/blockstates/adamant_ore.json
 83652767ce553d7f275c13d8545d56e4630e994a assets/dndmod/blockstates/chrysolite_block.json
 978c0a06476be414149a624f95b95e2b35efff6c assets/dndmod/blockstates/chrysolite_ore.json
@@ -17,7 +18,9 @@ c1c5139d0d10bfb56fad0be96c7ea6f2ef5d5a2d assets/dndmod/blockstates/adamant_block
 68ab64206cab97ff8e71730d8bab3b565b9f3a0a assets/dndmod/blockstates/end_sapphire_ore.json
 00ad3019198648bc87dae964fffebb3faedcbcaa assets/dndmod/blockstates/end_silver_ore.json
 83c63cbcbd5874b2ed2e22130af9a2abdee270db assets/dndmod/blockstates/end_sunstone_ore.json
+0aaa04e60293cc05615b1286e92d414e2a3ee64b assets/dndmod/blockstates/gold_chain.json
 9d2f8c9fdfafbe2ba981384ecd7ce238db3a6af7 assets/dndmod/blockstates/macerator.json
+15bf5d0e5535817b5335a7d3781c1e86a6f48ef7 assets/dndmod/blockstates/mithril_chain.json
 a62bea658f880ef527641ad895a1eee2e35d7e5b assets/dndmod/blockstates/nether_adamant_ore.json
 00630a15af79981d9cc53635164f5988ed124a94 assets/dndmod/blockstates/nether_chrysolite_ore.json
 776d5c99e02d0651ff3de5899a598844b5fae379 assets/dndmod/blockstates/nether_platinum_ore.json
@@ -26,6 +29,7 @@ ae06096b133a5c0af4efffdfdec9f5eb53e937ec assets/dndmod/blockstates/nether_sapphi
 c9c8fd354556773d6ad9e4e7372a8a60cde52f64 assets/dndmod/blockstates/nether_silver_ore.json
 608973fd8e3042506a80bf92afdb4d5f235c3235 assets/dndmod/blockstates/nether_sunstone_ore.json
 6f19d4d224983acbe7e21707c085770ea54ac3af assets/dndmod/blockstates/platinum_block.json
+4bfd90726d268944452f9ad686dab60223a69a46 assets/dndmod/blockstates/platinum_chain.json
 9ac3a58e4c80db0a9c53a3810d55d6ae91b5ec03 assets/dndmod/blockstates/platinum_ore.json
 892412fcc9f251d1fbf5d8bae76af76203cf3d17 assets/dndmod/blockstates/raw_adamant_block.json
 3a6d06d641556ce1a85f53a00d3ef2da3d2d984b assets/dndmod/blockstates/raw_platinum_block.json
@@ -35,6 +39,7 @@ c9c8fd354556773d6ad9e4e7372a8a60cde52f64 assets/dndmod/blockstates/nether_silver
 ce9dfa3dd284bf0083cd242f423749f2b55a9b8b assets/dndmod/blockstates/sapphire_block.json
 1bd9505d066c6d1b3047648d98e28334e1f1870a assets/dndmod/blockstates/sapphire_ore.json
 759959b3d02ac934981d291995342a40910641bd assets/dndmod/blockstates/silver_block.json
+7eae4d78caa4a7ac7b55c56b0b8c8c3c700ad384 assets/dndmod/blockstates/silver_chain.json
 ada9e97edf6fd7591a063bbb482e988f02f70c89 assets/dndmod/blockstates/silver_ore.json
 94d034c76b48de60ad7c74058b7885535bf53e4a assets/dndmod/blockstates/silver_wall.json
 d95b07d408f578ff57b54298b1b66908556d7bee assets/dndmod/blockstates/sound_block.json
@@ -60,6 +65,7 @@ c508399f3fbe6016bb593689b0dc46f6cf3e8242 assets/dndmod/blockstates/yew_stairs.js
 5b56965e9e2c1b093acea823f2cd19982bdafec6 assets/dndmod/blockstates/yew_wall_sign.json
 a95e93ff58a4fe060bffb400945f7f59addc2bd0 assets/dndmod/blockstates/yew_wood.json
 c437684b96d61aa9921703f84b72fffb8c4b27fd assets/dndmod/models/block/adamant_block.json
+553df4585d4fcbbf24194624ff26190c2c8bfc2f assets/dndmod/models/block/adamant_chain.json
 ae8589a9d7b607eec5745421b1fdd5ed4311de0d assets/dndmod/models/block/adamant_ore.json
 75a480f347b80b9fc71b24d4b52599a9fa7225b4 assets/dndmod/models/block/chrysolite_block.json
 c7f0c6c306ea140ae3fd1c93182ecb0a141be124 assets/dndmod/models/block/chrysolite_ore.json
@@ -77,6 +83,8 @@ aecf7fd54bd5cbad1b1960ac3d0a9e14bdbd4a4d assets/dndmod/models/block/end_ruby_ore
 4004ee512f9259da14e71a03f29957dc6b6966e7 assets/dndmod/models/block/end_sapphire_ore.json
 b04934beaca7bd8e64a1e236d7260bc77e27a543 assets/dndmod/models/block/end_silver_ore.json
 0ba23002c58f329aa0ff56c485cb37a5336c8815 assets/dndmod/models/block/end_sunstone_ore.json
+f276baa0c508d3dd485e75b8324cdb4968d75a39 assets/dndmod/models/block/gold_chain.json
+5f492e8feba0a99199c6c78b071d112c7b1c1ef2 assets/dndmod/models/block/mithril_chain.json
 8d3b49664dc4a4245e9f4776a1dc5a22046698fe assets/dndmod/models/block/nether_adamant_ore.json
 38cb581c37ea7424488358e7711e67d17924cf06 assets/dndmod/models/block/nether_chrysolite_ore.json
 223710b7c7b011307233d42121b88248a2e54f12 assets/dndmod/models/block/nether_platinum_ore.json
@@ -85,6 +93,7 @@ f6b32b76f171ab4cd74d7f8206e100f3486b247a assets/dndmod/models/block/nether_sapph
 63487ef98bb3e56819690c9926f87b7111501845 assets/dndmod/models/block/nether_silver_ore.json
 5b210139036a5c47452298c18bd0f23bc4872a7b assets/dndmod/models/block/nether_sunstone_ore.json
 c32dd19c39923f991279c4a6d13bcae2aee25c94 assets/dndmod/models/block/platinum_block.json
+7b661b3c60df8767315b681f7ebe1be2d22f2a30 assets/dndmod/models/block/platinum_chain.json
 07765b88b90edce95d54ff46386ff1b8f4e3ca31 assets/dndmod/models/block/platinum_ore.json
 b1f7f8826f91b0f3724c304f7fd83ea4d1a8fbd1 assets/dndmod/models/block/raw_adamant_block.json
 aaa00e7bb73928fd4225c880bd161524955ff84f assets/dndmod/models/block/raw_platinum_block.json
@@ -94,6 +103,7 @@ aaa00e7bb73928fd4225c880bd161524955ff84f assets/dndmod/models/block/raw_platinum
 bbcf36e5e0932e255fe8718003c3dfadfb14c94b assets/dndmod/models/block/sapphire_block.json
 4e3323ebdb09bd2dbb9cda828e439fcb8716ba96 assets/dndmod/models/block/sapphire_ore.json
 6fc359496ed18542d93f285562d5cb976543035f assets/dndmod/models/block/silver_block.json
+00e0b5329e64c187e65523cb8cdabbb9f43e1af4 assets/dndmod/models/block/silver_chain.json
 0e1ca25c1cbc373e2b331f4b1ca09425853802d6 assets/dndmod/models/block/silver_ore.json
 0588d4a75a612286782e8eceb83bf041f47eb0d3 assets/dndmod/models/block/silver_wall_post.json
 96c8720e30069ebcd2ed3022352c89b2bfc879aa assets/dndmod/models/block/silver_wall_side.json
@@ -141,6 +151,7 @@ c084f590c094085897f1b74c6381b417b60f1f21 assets/dndmod/models/block/yew_trapdoor
 3c8974ba6dc231e38deb4dd21e5866e945cd1a99 assets/dndmod/models/block/yew_wood.json
 7f9f24419494d4f6f1cec79c1af835622122b9c0 assets/dndmod/models/block/yew_wood_horizontal.json
 4ed079ea585933472704b7f71b52badd074ebde8 assets/dndmod/models/item/adamant_block.json
+0feb373f16da42e0e3b02b712e1d4a2aadee15ba assets/dndmod/models/item/adamant_chain.json
 bbe0513dd00abd305f5701193ef3015de4d903e9 assets/dndmod/models/item/adamant_ore.json
 d91719d98eed6ef57cfea7ff3e98d54924fd10eb assets/dndmod/models/item/chrysolite_block.json
 8e5c16f27b9680c139ebb653cab6c75a86a80461 assets/dndmod/models/item/chrysolite_ore.json
@@ -158,7 +169,9 @@ fc9bfdbe039273e034296ab17583425a540eba82 assets/dndmod/models/item/deepslate_sun
 f6e8218519f9bb6c9a7a533a2a4c8b870e33db8d assets/dndmod/models/item/end_sapphire_ore.json
 d498d7a27e11ea9018ea3ab72901dd4a27566e75 assets/dndmod/models/item/end_silver_ore.json
 7ae34a9dfc0f7d3f609aec5d8586cfd7887f5c31 assets/dndmod/models/item/end_sunstone_ore.json
+81707cc27985a111423dff5b35bef1d4220664c9 assets/dndmod/models/item/gold_chain.json
 c4ed45172d81742f19ef8e1539776e194136b58d assets/dndmod/models/item/macerator.json
+e5c32f01e4f8afba5147e84647321c5ff7e74a59 assets/dndmod/models/item/mithril_chain.json
 b8fdc86383d09f900a465d774e11e66a7b00dff6 assets/dndmod/models/item/nether_adamant_ore.json
 635b04e4de0db95834a0eb14e0063ab52bac9a80 assets/dndmod/models/item/nether_chrysolite_ore.json
 427f84ca3470219037f3d43a3ed6ef070e70924d assets/dndmod/models/item/nether_platinum_ore.json
@@ -167,6 +180,7 @@ b8fdc86383d09f900a465d774e11e66a7b00dff6 assets/dndmod/models/item/nether_adaman
 347ef0e50e246cb063b6ed65a08b56311ff366ed assets/dndmod/models/item/nether_silver_ore.json
 3428b20506d13c7f54057ffb9aba4ed32255e753 assets/dndmod/models/item/nether_sunstone_ore.json
 096f0b55256ea8aba8eeef88d02c519a5a382ef1 assets/dndmod/models/item/platinum_block.json
+834ac9fd958344425211a780fbf0435fadabfb41 assets/dndmod/models/item/platinum_chain.json
 9489ea65081e528e2e30687c9676e535ef43ceaa assets/dndmod/models/item/platinum_ore.json
 83ccfbaa6706d979efa34c46c2248c7a0dea074c assets/dndmod/models/item/raw_adamant_block.json
 6e135e720ff7282cd1f28123487617b92f4de3a4 assets/dndmod/models/item/raw_platinum_block.json
@@ -176,6 +190,7 @@ cd1009b4cd3088990956f5ae35b0e0c0269ffcef assets/dndmod/models/item/ruby_ore.json
 edece97515ba618b1ffb7af4154cb3299c0b01c7 assets/dndmod/models/item/sapphire_block.json
 3a9b54b84c730800bebae34f7adb7ec305f0a0b0 assets/dndmod/models/item/sapphire_ore.json
 0d3b2c9e49e86488d117e78a6a734347ea108e18 assets/dndmod/models/item/silver_block.json
+e326b0086bfd0a39ce64d074dde3115dda0eb640 assets/dndmod/models/item/silver_chain.json
 b6c0f54b10f7e54a00c7da713c0f78580bab83c3 assets/dndmod/models/item/silver_ore.json
 820bd66ed751a777f469e74ac32cba0883d227db assets/dndmod/models/item/sound_block.json
 2a28b424492b493bc83bf57e091ad84042f6f224 assets/dndmod/models/item/stripped_yew_log.json
