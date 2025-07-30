@@ -269,6 +269,7 @@ public class ClientEvents {
                             break;
                         case "quartz":
                             event.getToolTip().add(Component.literal("Used to cast §9Conjure Elemental§f, a Level 5 §9Conjuration §fspell."));
+                            event.getToolTip().add(Component.literal("Used to cast §9Mordenkainen's Magnificent Mansion§f, a Level 7 §9Conjuration §fspell."));
                             event.getToolTip().add(Component.literal("Used to cast §4Wall of Ice§f, a Level 6 §4Evocation §fspell."));
                             event.getToolTip().add(Component.literal("Used to cast §2Darkvision§f, a Level 2 §2Transmutation §fspell."));
                             event.getToolTip().add(Component.literal("Used to cast §2Awaken§f, a Level 5 §2Transmutation §fspell."));
@@ -367,6 +368,12 @@ public class ClientEvents {
                         case "platinum_chain":
                         case "adamant_chain":
                             event.getToolTip().add(Component.literal("Used to cast §eImprisonment§f, a Level 9 §eAbjuration §fspell."));
+                            break;
+                        case "yew_leaves":
+                            event.getToolTip().add(Component.literal("Used to cast §bDetect Poison and Disease§f, a Level 1 §bDivination §fspell."));
+                            break;
+                        case "razorvine":
+                            event.getToolTip().add(Component.literal("Used to cast §bWarp Sense§f, a Level 2 §bDivination §fspell."));
                             break;
                     }
                 }

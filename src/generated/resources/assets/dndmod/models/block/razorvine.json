@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/vine",
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "dndmod:block/razorvine",
+    "vine": "dndmod:block/razorvine"
+  }
+}

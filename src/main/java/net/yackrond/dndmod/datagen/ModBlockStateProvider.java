@@ -109,10 +109,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ADAMANT_CHAIN);
         chainBlock(ModBlocks.ADAMANT_CHAIN.get(), blockTexture(ModBlocks.ADAMANT_CHAIN.get()));
 
+        blockItem(ModBlocks.RAZORVINE);
+        vineBlock(ModBlocks.RAZORVINE.get(), blockTexture(ModBlocks.RAZORVINE.get()));
+
         //MACHINES
         simpleBlockWithItem(ModBlocks.MACERATOR.get(), new ModelFile.UncheckedModelFile(modLoc("block/macerator")));
         blockWithItem(ModBlocks.SOUND_BLOCK);
 
+    }
+
+    private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {
+        return modLoc("block/" + block.getId().getPath());
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
@@ -134,6 +141,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         .build(),
                 BlockStateProperties.WATERLOGGED
         );
+    }
+
+    private void vineBlock(Block vineBlock, ResourceLocation loc) {
+        ModelFile model = models().withExistingParent(vineBlock.asItem().toString(), mcLoc("block/vine"))
+                .renderType("cutout")
+                .ao(false)
+                .texture("particle", loc)
+                .texture("vine", loc);
+
+        getVariantBuilder(vineBlock).forAllStates(state -> ConfiguredModel.builder().modelFile(model).build());
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

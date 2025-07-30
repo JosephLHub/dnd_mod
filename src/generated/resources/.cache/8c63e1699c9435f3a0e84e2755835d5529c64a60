@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-12T13:27:43.685206	Block States: dndmod
+// 1.20.1	2025-06-19T01:21:07.6750068	Block States: dndmod
 c1c5139d0d10bfb56fad0be96c7ea6f2ef5d5a2d assets/dndmod/blockstates/adamant_block.json
 abf5dbea4802cc7a5b3ed609af63565f128495ce assets/dndmod/blockstates/adamant_chain.json
 05abf3dfff198098f4ba9b632cbe4433d7c9bcd7 assets/dndmod/blockstates/adamant_ore.json
@@ -34,6 +34,7 @@ c9c8fd354556773d6ad9e4e7372a8a60cde52f64 assets/dndmod/blockstates/nether_silver
 892412fcc9f251d1fbf5d8bae76af76203cf3d17 assets/dndmod/blockstates/raw_adamant_block.json
 3a6d06d641556ce1a85f53a00d3ef2da3d2d984b assets/dndmod/blockstates/raw_platinum_block.json
 5cf6d1b3d43d49797b18b649543abed6be12cf79 assets/dndmod/blockstates/raw_silver_block.json
+5b55ad53183a2cc05f9ae4eb590de46690104134 assets/dndmod/blockstates/razorvine.json
 1fbda29776b60b0b0aefbaadb6f57d90eb71697a assets/dndmod/blockstates/ruby_block.json
 0cfac4ac56f9d3e78fdc647e742cc135cc6c5866 assets/dndmod/blockstates/ruby_ore.json
 ce9dfa3dd284bf0083cd242f423749f2b55a9b8b assets/dndmod/blockstates/sapphire_block.json
@@ -98,6 +99,7 @@ c32dd19c39923f991279c4a6d13bcae2aee25c94 assets/dndmod/models/block/platinum_blo
 b1f7f8826f91b0f3724c304f7fd83ea4d1a8fbd1 assets/dndmod/models/block/raw_adamant_block.json
 aaa00e7bb73928fd4225c880bd161524955ff84f assets/dndmod/models/block/raw_platinum_block.json
 62e1233b1a4db553d1631f4bca5971eb964ea39b assets/dndmod/models/block/raw_silver_block.json
+154cedc47aa3a637774da69104597630fbe4ae2d assets/dndmod/models/block/razorvine.json
 53534cba926d3d2786d38388f9d0b271672bb776 assets/dndmod/models/block/ruby_block.json
 6d2a40476dd372d115549bf10d060c34d8d10010 assets/dndmod/models/block/ruby_ore.json
 bbcf36e5e0932e255fe8718003c3dfadfb14c94b assets/dndmod/models/block/sapphire_block.json
@@ -185,6 +187,7 @@ b8fdc86383d09f900a465d774e11e66a7b00dff6 assets/dndmod/models/item/nether_adaman
 83ccfbaa6706d979efa34c46c2248c7a0dea074c assets/dndmod/models/item/raw_adamant_block.json
 6e135e720ff7282cd1f28123487617b92f4de3a4 assets/dndmod/models/item/raw_platinum_block.json
 ab415064d53a79946b2112f7bb34ffced6822f96 assets/dndmod/models/item/raw_silver_block.json
+7b54b9d792081a47da08161fabb2c20940eae3eb assets/dndmod/models/item/razorvine.json
 9ee99629089be282e2af9d268b311324a032d4e5 assets/dndmod/models/item/ruby_block.json
 cd1009b4cd3088990956f5ae35b0e0c0269ffcef assets/dndmod/models/item/ruby_ore.json
 edece97515ba618b1ffb7af4154cb3299c0b01c7 assets/dndmod/models/item/sapphire_block.json

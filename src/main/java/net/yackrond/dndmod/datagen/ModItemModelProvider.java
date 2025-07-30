@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -211,6 +212,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.JADE_CIRCLET);
         simpleItem(ModItems.GUM_ARABIC);
         simpleItem(ModItems.OIL_BOTTLE);
+        simpleItem(ModItems.VELLUM);
+        simpleItem(ModItems.MINIATURE_ORNATE_CHEST);
+        simpleItem(ModItems.GEM_INFUSED_CHALK);
+        simpleItem(ModItems.GEM_INFUSED_INK);
+        simpleItem(ModItems.LOCKBOX);
+        simpleItem(ModItems.GEM_ENCRUSTED_BOWL);
+        simpleItem(ModItems.AMETHYST_PRISM);
+        simpleItem(ModItems.DIAMOND_PRISM);
+        simpleItem(ModItems.EMERALD_PRISM);
+        simpleItem(ModItems.RUBY_PRISM);
+        simpleItem(ModItems.SAPPHIRE_PRISM);
+        simpleItem(ModItems.GEM_ENCRUSTED_HORN);
+        simpleItem(ModItems.OWL_EGG);
+        simpleItem(ModItems.HUMMINGBIRD_EGG);
 
         simpleItem(ModItems.SILVER_INGOT);
         simpleItem(ModItems.SILVER_NUGGET);
@@ -260,17 +275,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.YEW_SIGN);
         simpleItem(ModItems.YEW_HANGING_SIGN);
-        saplingItem(ModBlocks.YEW_SAPLING);
+        flatBlockItem(ModBlocks.YEW_SAPLING);
 
         simpleItem(ModItems.MITHRIL_CHAIN);
         simpleItem(ModItems.GOLD_CHAIN);
         simpleItem(ModItems.SILVER_CHAIN);
         simpleItem(ModItems.PLATINUM_CHAIN);
         simpleItem(ModItems.ADAMANT_CHAIN);
+        flatBlockItem(ModBlocks.RAZORVINE);
 
     }
 
-    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+    private ItemModelBuilder flatBlockItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(DnDMod.MOD_ID, "block/" + item.getId().getPath()));

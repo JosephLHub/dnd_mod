@@ -4,11 +4,14 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.yackrond.dndmod.block.ModBlocks;
@@ -56,6 +59,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SILVER_CHAIN.get());
         this.dropSelf(ModBlocks.PLATINUM_CHAIN.get());
         this.dropSelf(ModBlocks.ADAMANT_CHAIN.get());
+        this.add(ModBlocks.RAZORVINE.get(), block -> createShearsOnlyDrop(ModBlocks.RAZORVINE.get()));
 
         this.dropSelf(ModBlocks.MACERATOR.get());
 
@@ -98,6 +102,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.YEW_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_SIGN.get()));
         this.add(ModBlocks.YEW_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_HANGING_SIGN.get()));
         this.add(ModBlocks.YEW_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.YEW_HANGING_SIGN.get()));
+
     }
 
     protected LootTable.Builder createModdedOreDrops(Block pBlock, Item item, float pMin, float pMax) {

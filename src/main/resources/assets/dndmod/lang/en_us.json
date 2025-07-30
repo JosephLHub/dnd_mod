@@ -188,6 +188,20 @@
   "item.dndmod.jade_circlet": "Jade Circlet",
   "item.dndmod.gum_arabic": "Gum Arabic",
   "item.dndmod.oil_bottle": "Oil Bottle",
+  "item.dndmod.vellum": "Vellum",
+  "item.dndmod.miniature_ornate_chest": "Miniature Ornate Chest",
+  "item.dndmod.gem_infused_chalk": "Gem Infused Chalk",
+  "item.dndmod.gem_infused_ink": "Gem Infused Ink",
+  "item.dndmod.lockbox": "Lockbox",
+  "item.dndmod.gem_encrusted_bowl": "Gem Encrusted Bowl",
+  "item.dndmod.amethyst_prism": "Amethyst Prism",
+  "item.dndmod.diamond_prism": "Diamond Prism",
+  "item.dndmod.emerald_prism": "Emerald Prism",
+  "item.dndmod.ruby_prism": "Ruby Prism",
+  "item.dndmod.sapphire_prism": "Sapphire Prism",
+  "item.dndmod.gem_encrusted_horn": "Gem Encrusted Horn",
+  "item.dndmod.owl_egg": "Owl Egg",
+  "item.dndmod.hummingbird_egg": "Hummingbird Egg",
 
   "item.dndmod.silver_ingot": "Silver Ingot",
   "item.dndmod.silver_nugget": "Silver Nugget",
@@ -297,6 +311,7 @@
   "block.dndmod.sound_block": "Sound Block",
 
   "block.dndmod.macerator": "Macerator",
+  "block.dndmod.razorvine": "Razorvine",
 
   "tooltip.dndmod.metal_detector.tooltip": "Finds valuables underground",
   "tooltip.dndmod.resistance.tooltip": "Used to cast Resistance, a 1st Level Abjuration Spell",

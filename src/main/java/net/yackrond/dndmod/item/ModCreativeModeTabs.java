@@ -267,7 +267,20 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.PLATINUM_CHAIN.get());
                 pOutput.accept(ModItems.ADAMANT_CHAIN.get());
                 pOutput.accept(ModItems.OIL_BOTTLE.get());
-
+                pOutput.accept(ModItems.VELLUM.get());
+                pOutput.accept(ModItems.MINIATURE_ORNATE_CHEST.get());
+                pOutput.accept(ModItems.GEM_INFUSED_CHALK.get());
+                pOutput.accept(ModItems.GEM_INFUSED_INK.get());
+                pOutput.accept(ModItems.LOCKBOX.get());
+                pOutput.accept(ModItems.GEM_ENCRUSTED_BOWL.get());
+                pOutput.accept(ModItems.AMETHYST_PRISM.get());
+                pOutput.accept(ModItems.DIAMOND_PRISM.get());
+                pOutput.accept(ModItems.EMERALD_PRISM.get());
+                pOutput.accept(ModItems.RUBY_PRISM.get());
+                pOutput.accept(ModItems.SAPPHIRE_PRISM.get());
+                pOutput.accept(ModItems.GEM_ENCRUSTED_HORN.get());
+                pOutput.accept(ModItems.OWL_EGG.get());
+                pOutput.accept(ModItems.HUMMINGBIRD_EGG.get());
             }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

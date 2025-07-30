@@ -100,6 +100,7 @@ public class DnDMod
         }
         else if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.YEW_SAPLING);
+            event.accept(ModBlocks.RAZORVINE);
         }
         else if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModItems.YEW_SIGN);

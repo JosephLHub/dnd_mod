@@ -109,6 +109,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SILVER_CHAIN.get())
                 .add(ModItems.PLATINUM_CHAIN.get())
                 .add(ModItems.ADAMANT_CHAIN.get())
+                .add(ModBlocks.YEW_LEAVES.get().asItem())
+                .add(ModBlocks.RAZORVINE.get().asItem())
                 .add(Items.SUGAR_CANE);
     }
 }

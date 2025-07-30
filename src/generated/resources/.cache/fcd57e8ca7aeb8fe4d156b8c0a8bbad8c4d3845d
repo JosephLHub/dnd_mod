@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-12T13:27:43.6832042	Item Models: dndmod
+// 1.20.1	2025-06-19T13:39:41.9018288	Item Models: dndmod
 5dcc11af020f77cc202babbcc48e9d589ab66ac1 assets/dndmod/models/item/acorn.json
 00bec11ef3af4644af6af7f4c31b5bba2da97862 assets/dndmod/models/item/adamantine_ingot.json
 ab1afbed3d0b81bf8e93f8b0b0c3edc7822692f2 assets/dndmod/models/item/adamant_chain.json
@@ -7,6 +7,7 @@ ab1afbed3d0b81bf8e93f8b0b0c3edc7822692f2 assets/dndmod/models/item/adamant_chain
 8e7b6e399454ae81a3f43f18286a12f60c705b49 assets/dndmod/models/item/amber_rod.json
 f211cd499d7e87f2fdd2719df6ad14db780c94b7 assets/dndmod/models/item/amethyst_cone.json
 5e33c797d515212831cb19c90c14672f5d666c46 assets/dndmod/models/item/amethyst_orb.json
+063274d82070cba98582b6c35e77d2cd34a1cd0e assets/dndmod/models/item/amethyst_prism.json
 175304c57a0cb97b8d8c55b34408e17e00c91fd2 assets/dndmod/models/item/amethyst_rod.json
 cddb58361b98e06a1f6b634ed02635d6e4173ba3 assets/dndmod/models/item/amethyst_vial_of_tears.json
 b541cd9887b18ecda2bae121458b84dfec8abfdf assets/dndmod/models/item/apple_pie_crust.json
@@ -39,10 +40,12 @@ a8afb68d65529794a778026556c591bba3ee34e2 assets/dndmod/models/item/cured_leather
 c98ce1ad98a1428c4ba07a479fcad6e4a8340d19 assets/dndmod/models/item/deck_of_cards.json
 7f951f92a07d0c43fdb231007cb5551beda1a201 assets/dndmod/models/item/diamantine_hourglass.json
 bda1055c31e69cad98332822b99d226f9577d1f4 assets/dndmod/models/item/diamond_orb.json
+95e4db8abc1e7d53d4840c29300af39388a00a60 assets/dndmod/models/item/diamond_prism.json
 2d4e6909ae8b9cf7a41cc1d77e6fa1d44ef9050a assets/dndmod/models/item/dragon_insignia.json
 3dc780158d7a6bca986c4a10c3d97acd447b30af assets/dndmod/models/item/dried_carrot.json
 41a3b6e8f8ff710c00e40ad3ef7b5ffafe1c18bc assets/dndmod/models/item/dust.json
 19d49cc06be09d10d28ef96fcf2c17195126980c assets/dndmod/models/item/emerald_orb.json
+9718ab02da978d7366ca667476e778177b6180aa assets/dndmod/models/item/emerald_prism.json
 c18480888dd2307661e8071129457a37cfc231d5 assets/dndmod/models/item/end_attuned_tuning_fork.json
 213d97dd717b73c8d665b97ef9cb9ff7e3a40790 assets/dndmod/models/item/explosive_orb.json
 ecf1fa3849c601c3ae8beafd6a04b2e542a0e06d assets/dndmod/models/item/eyelash_in_gum_arabic.json
@@ -53,6 +56,10 @@ c03505cea90b4b5cd6577561cb6e01fd44a8d66c assets/dndmod/models/item/flea_in_bottl
 3fd554b6ebb49977d05554d4133ba0e12e993c2f assets/dndmod/models/item/focus.json
 9ee0c602adcedec10f73909904908bc284e1b929 assets/dndmod/models/item/fox_fur.json
 11f78073105f8aca6353b2ad3a427b9e1f8d21c0 assets/dndmod/models/item/fulgurous_twig.json
+8ad191e9272cefb8feb8acc793ff3dbdc413a60e assets/dndmod/models/item/gem_encrusted_bowl.json
+d14d22fc2b6c9a7d5beb0d941d634e1b9d153382 assets/dndmod/models/item/gem_encrusted_horn.json
+b28bd17fd63284acc0192010d304e9e12e095af2 assets/dndmod/models/item/gem_infused_chalk.json
+98638ac3e6dcfc543782e3ceeda01f858e605e94 assets/dndmod/models/item/gem_infused_ink.json
 a4ec7603b42368f949b2a6e2e85e67aa6f9588a9 assets/dndmod/models/item/gilded_acorn.json
 5782714e95fe4a5bc66078301c0a8509b13af376 assets/dndmod/models/item/gilded_flower.json
 a9b30efea793c86030f382110b1b2af9597a9c5e assets/dndmod/models/item/glass_cone.json
@@ -74,6 +81,7 @@ d5d85d8fcb602bdf307692249352ea10dfb56d76 assets/dndmod/models/item/gum_arabic_ha
 0e14a8895ad4b1fba2ed1664ea71a78b67d52964 assets/dndmod/models/item/holy_text.json
 5b918c96fe8d798090e6a2d20563c19db77cdbe1 assets/dndmod/models/item/holy_water_bottle.json
 1914f03d355a31916c983ae2090bc8574deac40e assets/dndmod/models/item/hot_pepper.json
+8385f3f062dfe42d9882f980898d05ccf3c20c3c assets/dndmod/models/item/hummingbird_egg.json
 5b2b162d6d410d378486c3f34c469e77d1cdc37f assets/dndmod/models/item/hummingbird_feather.json
 68517ad624928408ad3e2822b7b3335f4e0d9a8a assets/dndmod/models/item/incense.json
 af9756edd1cf2e601b08862ffa799204eb5242aa assets/dndmod/models/item/iron_blade.json
@@ -87,6 +95,7 @@ af9756edd1cf2e601b08862ffa799204eb5242aa assets/dndmod/models/item/iron_blade.js
 802ea0d6523bb48143af5c104bd71a5857261998 assets/dndmod/models/item/linked_platinum_rings.json
 b73ff6e6f45e3c8579ad6abf81bdf818ccab2946 assets/dndmod/models/item/linked_silver_rings.json
 54273899a1f0932ce7e0426ac25e29d19e911efd assets/dndmod/models/item/liquorice_root.json
+66c26c722a4118693e2181a96935abbdedb98656 assets/dndmod/models/item/lockbox.json
 b7e2c3cafed4ff6b2c5d8053569946abb7a91c55 assets/dndmod/models/item/magnifying_glass.json
 6557a494c831403873576fa77b7bfe454d3cb182 assets/dndmod/models/item/mandrake_root.json
 d1a321b10767bfd5f47d467a41163ee9afa6bd38 assets/dndmod/models/item/marked_bone.json
@@ -98,6 +107,7 @@ edfebca4b2eadd39f31242ee2c2b716be5c058b2 assets/dndmod/models/item/miniature_cla
 6605fa236465f5ab203aae1b6dac21c0aa7fb660 assets/dndmod/models/item/miniature_cloak.json
 faf377dae3c0081e468bae3498bd3ad55183f7f4 assets/dndmod/models/item/miniature_ivory_portal.json
 782f4bb82a58290bc2b432e2922923e69617cc6b assets/dndmod/models/item/miniature_jade_prison.json
+4e996c6c7321dd1a5333f943e9f7bd7a2aae7c91 assets/dndmod/models/item/miniature_ornate_chest.json
 5c729418ea5d91d11339cf6d3ec578a053638db9 assets/dndmod/models/item/miniature_player.json
 1145855ec04e0946e331f2345370ce9e26520d38 assets/dndmod/models/item/miniature_silver_cage.json
 b3b310d2f792af44cbaaf7d6e9925dfd16fd60c5 assets/dndmod/models/item/mistletoe.json
@@ -117,6 +127,7 @@ a4045e92dacdc1b587e4f962becaf210fcf5390f assets/dndmod/models/item/ornate_amethy
 7be96fc38102a034ae8467f8782afd17a008e026 assets/dndmod/models/item/ornate_stone.json
 e4edd89027511d0bc8fa551cd35aa8ba9abec1b4 assets/dndmod/models/item/outer_planes_insignia.json
 30f5e43c2b834f196c6ef9d5421acee4c80e2951 assets/dndmod/models/item/overworld_attuned_tuning_fork.json
+0789e6fc6fe6e316d159a2803d56bfe28fcdcad7 assets/dndmod/models/item/owl_egg.json
 efdbd6bea62c91ac8827c0a6db59c0ad69fc7f6d assets/dndmod/models/item/owl_feather.json
 e0ebe9c6d2a0527455018e8ba5491153e6139585 assets/dndmod/models/item/paper_cone.json
 d4fe3e9466fb1fe173025793c50231c5e93533a6 assets/dndmod/models/item/paper_fan.json
@@ -162,6 +173,7 @@ c2fb3fcdee7957d03c26eef273dd9f4c20589b72 assets/dndmod/models/item/rare_incense.
 804205304eeca3f0b232cca61ed05b0d063b9860 assets/dndmod/models/item/raw_adamant.json
 59dbbd2dd4228dbe9f098fa9989aeff1be920e79 assets/dndmod/models/item/raw_platinum.json
 4ea876a3015be13fcdcda1263342645c5a6c06a1 assets/dndmod/models/item/raw_silver.json
+1e138017a356c28dba21be785d7e9321b24b3c5f assets/dndmod/models/item/razorvine.json
 ef7ca47ec7fc963131a1c3374cdb121f5147ad99 assets/dndmod/models/item/red_dragon_scale.json
 08f11d95e463cf90e151e66eaae04e4b39a18a06 assets/dndmod/models/item/reliquary.json
 d6bcc296bf649b18501c6869f757cab4cd08a3a6 assets/dndmod/models/item/rope.json
@@ -169,11 +181,13 @@ d6bcc296bf649b18501c6869f757cab4cd08a3a6 assets/dndmod/models/item/rope.json
 6ffcaebf543b40aab8a9711c8d33e85eb161c804 assets/dndmod/models/item/rotten_egg.json
 8978dc445b5f02796fba4c52e8f5280d4fe035c9 assets/dndmod/models/item/ruby.json
 1281e4b5326115f4d008abf689a3839e3e17b76c assets/dndmod/models/item/ruby_orb.json
+afaba3be687605949e4987ab350be5d94227f76f assets/dndmod/models/item/ruby_prism.json
 7eace54b03e0b375a165894a5df17f6f769d611c assets/dndmod/models/item/ruby_vial_of_blood.json
 b5826094598313a5b9fd40d7d504d8fd2b5515af assets/dndmod/models/item/ruby_vial_of_fresh_blood.json
 751584e5824c2af423c98a6408490482738e3b96 assets/dndmod/models/item/salt.json
 370b6b3aee716a8823350329c219f97917cda9b1 assets/dndmod/models/item/sapphire.json
 14abb9fb08902aa2607473894edd43795a6117aa assets/dndmod/models/item/sapphire_orb.json
+ebaab581f4723ea299dab977e8f9aa95bb4e21b5 assets/dndmod/models/item/sapphire_prism.json
 df3d769f3c62f17d5d2837dff88fb31cf078865b assets/dndmod/models/item/sesame_seeds.json
 cabdad3302dfd0c911561ecf25ad0e17efbe24db assets/dndmod/models/item/shamrock.json
 80091f28c53bfdfbdd795b315d7423f416b9e1ed assets/dndmod/models/item/silk.json
@@ -207,6 +221,7 @@ ec5d49c855ebfa1912bd2a818369138f5aac1524 assets/dndmod/models/item/tentacle.json
 1d8d68b34904d9f40a98a49402d6203e04c3d923 assets/dndmod/models/item/tuning_fork.json
 338093bdee605d7a684dafdf23402cc10596f74b assets/dndmod/models/item/twisted_paper.json
 50427a339b9009ac7e0ab56cf8c77157f974cf06 assets/dndmod/models/item/undead_eye_in_diamond.json
+156cde14aa191dcd64a18b6662a6c2729ae3db26 assets/dndmod/models/item/vellum.json
 1c7932b9c6850d58cd0b9287b51949be064b96f9 assets/dndmod/models/item/vial_of_blood.json
 402ce4610a6749fd8982d650e5e03d8404a87a2f assets/dndmod/models/item/vial_of_brimstone_and_pitch.json
 805392358e0cf559a879fedfd60955b478dae177 assets/dndmod/models/item/vial_of_eye_ointment.json

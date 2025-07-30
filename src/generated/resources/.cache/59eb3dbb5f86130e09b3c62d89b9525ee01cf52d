@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-12T13:27:43.6822039	Loot Tables
+// 1.20.1	2025-06-19T01:21:07.673004	Loot Tables
 58fde54f505b87b89d75faa3faaaa2d1e4f961ce data/dndmod/loot_tables/blocks/adamant_block.json
 330b1ccee7d9131bd902d5958dd04d1bad8ac902 data/dndmod/loot_tables/blocks/adamant_chain.json
 b9b7dd6d83093cec06e84d03479d1768014c0c37 data/dndmod/loot_tables/blocks/adamant_ore.json
@@ -34,6 +34,7 @@ bc7d0ecab3a5052cc57171786846e98f0f0cd95a data/dndmod/loot_tables/blocks/platinum
 f976cac6c7e9d94540dbdf3143f0dfeb0df6d795 data/dndmod/loot_tables/blocks/raw_adamant_block.json
 e6d67bfc92d24804f64882a25118a70e8a0d25e4 data/dndmod/loot_tables/blocks/raw_platinum_block.json
 861212aaaba832e936a00101331a3d90213a3443 data/dndmod/loot_tables/blocks/raw_silver_block.json
+d80a13922827a57dad2ac54b7787c1f8d1195a28 data/dndmod/loot_tables/blocks/razorvine.json
 5874caa07aa1dea8b580ca676c1ad87397425927 data/dndmod/loot_tables/blocks/ruby_block.json
 aae9e557006179756fbdd900fd049ada4f766fcc data/dndmod/loot_tables/blocks/ruby_ore.json
 6acae0c602518bb0e6dfe4ceb3a4182e679f70eb data/dndmod/loot_tables/blocks/sapphire_block.json

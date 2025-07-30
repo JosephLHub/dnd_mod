@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -100,7 +101,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
     public static final RegistryObject<Block> ADAMANT_CHAIN = BLOCKS.register("adamant_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
 
-    public static final RegistryObject<Block> ORNATE_CHEST = BLOCKS.register("ornate_chest", () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.CHEST)));
+    public static final RegistryObject<Block> RAZORVINE = BLOCKS.register("razorvine", () -> new VineBlock(BlockBehaviour.Properties.copy(Blocks.VINE).mapColor(MapColor.NONE)));
+
+    //public static final RegistryObject<Block> ORNATE_CHEST = BLOCKS.register("ornate_chest", () -> new ChestBlock(BlockBehaviour.Properties.copy(Blocks.CHEST)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
